@@ -17,9 +17,10 @@ background-image: url('http://images.mattmills.info/me1.jpg');
 background-image: url('http://images.mattmills.info/me1.jpg');
 }
 
-.outdented h1 {
+.pagetitle h1 {
     margin-left: 8%;
     line-height: 60px;
+    padding-bottom: 2em;
     }
 
 .bigletters{
