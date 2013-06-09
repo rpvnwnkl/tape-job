@@ -205,3 +205,12 @@ background-position: center top;
 .navbar .brand {
  font-size: 3em;
  }
+
+ .desk{
+  background-size: cover;
+  background-image: url('http://images.mattmills.info/upsidedownwall.jpg');
+ }
+  .rightsidetable{
+  background-size: cover;
+  background-image: url('http://images.mattmills.info/righttsidetable.jpg');
+ }
