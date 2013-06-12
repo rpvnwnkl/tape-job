@@ -4,10 +4,17 @@
 
 @import url(http://fonts.googleapis.com/css?family=Play);
 @import url(http://fonts.googleapis.com/css?family=Alfa+Slab+One);
-body {
+html, body {
+  margin: 0;
+  padding: 0;
   font-size: 100%;
   padding-left:0px;
   padding-right:0px;
+
+}
+
+.container-fluid {
+  
 }
 p {
     font-family: Play, Helvetica, sans-serif;
@@ -89,6 +96,7 @@ padding-right:0px;
 
 .nomargin{
 margin-left:0px;
+margin-right:0px;
 }
 
 .flush{
@@ -99,16 +107,14 @@ margin-left: 0px !important;
 
 }
 
-.desk{
+.office{
     width:100%;
     height:auto;
     border: none;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    white-space: nowrap;
+
 }
 
-.desk img {
+.office img {
     width: 100%;
     height: auto;
     -webkit-transition: all 0.5s ease-out; 
@@ -131,12 +137,12 @@ margin-left: 0px !important;
     vertical-align: top;
     }
 
-.tapegallery {
+/*.tapegallery {
 background-image: url('http://images.mattmills.info/officeview.jpg');
 background-size: cover;
 background-repeat: no-repeat;
 background-position: center top;
-}
+}*/
 
 /*.lightbox-content {
   display: inline-block;
@@ -207,11 +213,60 @@ background-position: center top;
  font-size: 3em;
  }
 
- .desk{
+ .office{
   background-size: cover;
   background-image: url('http://images.mattmills.info/upsidedownwall.jpg');
  }
-  .rightsidetable{
-  background-size: cover;
-  background-image: url('http://images.mattmills.info/righttsidetable.jpg');
- }
+ 
+/* big video css properties from http://tinyurl.com/pm2e9tr */
+.vidwrapper {
+    position: absolute;
+    width: 2200%;
+    height: 100%;
+    z-index: 1000;
+}
+
+.screen {
+    position: relative;
+    height: 100%; 
+    width: 4.5455%; /*  NOTE:numVideos/100%  */
+    float: left;
+    overflow: hidden;
+}
+
+.big-image {
+    min-width: 100%;
+    min-height: 100%; 
+    height: auto;
+    width: auto; 
+}
+
+.office nav {
+    position:absolute; 
+    right: 5%; 
+    top: 45%; 
+    padding: 20px; 
+    background: #000; 
+    border-radius: 40px; 
+    opacity: .4; 
+    cursor: pointer;}
+    nav: hover {
+    opacity: .6;
+}
+ 
+.next-icon {
+    display: block;
+    border-top: solid 2px #fff; 
+    border-right: solid 2px #fff; 
+    width: 20px; 
+    height: 20px;
+    position: relative;
+    left: -5px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    color: #fff;
+    text-decoration: none;
+}

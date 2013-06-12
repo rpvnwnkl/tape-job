@@ -17,14 +17,31 @@
             }
         </style>
 
+
         <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
         <link rel="stylesheet" href="css/bootstrap-lightbox.min.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/bigvideo.css">
 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-        
+        <link href="http://vjs.zencdn.net/4.0/video-js.css" rel="stylesheet">
+        <script src="http://vjs.zencdn.net/4.0/video.js"></script>
+        <style>
+            .vidwrapper {
+            display: none;
+            
+            }
+        </style>
     </head>
     <body>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.js"><\/script>')</script>
+        <script src="js/jquery.imagesloaded.min.js"></script>
+        <script src="js/jquery-ui-1.10.3.custom.js"></script>  
+        <script src="js/jquery.scrollTo.js"></script>
+        <script src="js/bigvideo.js"></script>
+        <script src="js/jquery.transit.min.js"></script>
+        
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
@@ -52,35 +69,104 @@
         <p>And although our hands may be guided the question remains: 'Is your mind?'</p>
         </div>
         </div>
-        <div class="row-fluid">
-         
-         <!-- 
-          <div class="span12 desk">
-
-            <a data-toggle="lightbox" href="#flipvid"><img src="http://images.mattmills.info/empty-desk_v1.jpg"></a>
-            <div id="#flipvid" class="lightbox hide fade" tabindex="-1" role="dialog" aria-hidden="true">
-              <div class="lightbox-content">
-                <video width="100%" autoplay="" controls="">
-                  <source src="flipvid.mp4"></source>
-                </video>
-              </div>
+        
+        <div class="span12 office nomargin">
+            <a id="desk" href=""><img src="http://images.mattmills.info/empty-desk_v1.jpg"></a>
+        </div>     
+            <div class="vidwrapper">
+                  <div class="screen" id="screen-1" data-video="vid/1.webmhd.webm">
+                    <img src="img/1.webmhd.png" class="big-image" />
+                    <h1 class="video-title">#1 Bird</h1>
+                  </div>
+                  <div class="screen" id="screen-2" data-video="vid/2.webmhd.webm">
+                    <img src="img/2.webmhd.png" class="big-image" />
+                    <h1 class="video-title">#2 Satellite</h1>
+                  </div>
+                  <div class="screen" id="screen-3" data-video="vid/3.webmhd.webm">
+                    <img src="img/3.webmhd.png" class="big-image" />
+                    <h1 class="video-title">#3 Camera</h1>
+                  </div>
+                  <div class="screen" id="screen-4" data-video="vid/4.webmhd.webm">
+                    <img src="img/4.webmhd.png" class="big-image" />
+                    <h1 class="video-title">#4 Spider</h1>
+                  </div>
+                  <div class="screen" id="screen-5" data-video="vid/5.webmhd.webm">
+                    <img src="img/5.webmhd.png" class="big-image" />
+                    <h1 class="video-title">#5 Dandelion</h1>
+                  </div>
+                  <div class="screen" id="screen-6" data-video="vid/6.webmhd.webm">
+                    <img src="img/6.webmhd.png" class="big-image" />
+                    <h1 class="video-title">#1 Bird</h1>
+                  </div>
+                  <div class="screen" id="screen-7" data-video="vid/7.webmhd.webm">
+                    <img src="img/7.webmhd.png" class="big-image" />
+                    <h1 class="video-title">#2 Satellite</h1>
+                  </div>
+                  <div class="screen" id="screen-8" data-video="vid/8.webmhd.webm">
+                    <img src="img/8.webmhd.png" class="big-image" />
+                    <h1 class="video-title">#3 Camera</h1>
+                  </div>
+                  <div class="screen" id="screen-9" data-video="vid/9.webmhd.webm">
+                    <img src="img/9.webmhd.png" class="big-image" />
+                    <h1 class="video-title">#4 Spider</h1>
+                  </div>
+                  <div class="screen" id="screen-10" data-video="vid/10.webmhd.webm">
+                    <img src="img/10.webmhd.png" class="big-image" />
+                    <h1 class="video-title">#5 Dandelion</h1>
+                  </div>
+                  <div class="screen" id="screen-11" data-video="vid/11.webmhd.webm">
+                    <img src="img/11.webmhd.png" class="big-image" />
+                    <h1 class="video-title">#1 Bird</h1>
+                  </div>  
+                  <div class="screen" id="screen-12" data-video="vid/12.webmhd.webm">
+                    <img src="img/12.webmhd.png" class="big-image" />
+                    <h1 class="video-title">#1 Bird</h1>
+                  </div>
+                  <div class="screen" id="screen-13" data-video="vid/13.webmhd.webm">
+                    <img src="img/13.webmhd.png" class="big-image" />
+                    <h1 class="video-title">#2 Satellite</h1>
+                  </div>
+                  <div class="screen" id="screen-14" data-video="vid/14.webmhd.webm">
+                    <img src="img/14.webmhd.png" class="big-image" />
+                    <h1 class="video-title">#3 Camera</h1>
+                  </div>
+                  <div class="screen" id="screen-15" data-video="vid/15.webmhd.webm">
+                    <img src="img/15.webmhd.png" class="big-image" />
+                    <h1 class="video-title">#4 Spider</h1>
+                  </div>
+                  <div class="screen" id="screen-16" data-video="vid/16.webmhd.webm">
+                    <img src="img/16.webmhd.png" class="big-image" />
+                    <h1 class="video-title">#5 Dandelion</h1>
+                  </div>
+                  <div class="screen" id="screen-17" data-video="vid/17.webmhd.webm">
+                    <img src="img/17.webmhd.png" class="big-image" />
+                    <h1 class="video-title">#1 Bird</h1>
+                  </div>
+                  <div class="screen" id="screen-18" data-video="vid/18.webmhd.webm">
+                    <img src="img/18.webmhd.png" class="big-image" />
+                    <h1 class="video-title">#2 Satellite</h1>
+                  </div>
+                  <div class="screen" id="screen-19" data-video="vid/19.webmhd.webm">
+                    <img src="img/19.webmhd.png" class="big-image" />
+                    <h1 class="video-title">#3 Camera</h1>
+                  </div>
+                  <div class="screen" id="screen-20" data-video="vid/20.webmhd.webm">
+                    <img src="img/20.webmhd.png" class="big-image" />
+                    <h1 class="video-title">#4 Spider</h1>
+                  </div>
+                  <div class="screen" id="screen-21" data-video="vid/21.webmhd.webm">
+                    <img src="img/21.webmhd.png" class="big-image" />
+                    <h1 class="video-title">#5 Dandelion</h1>
+                  </div> 
+                  <div class="screen" id="screen-22" data-video="vid/22.webmhd.webm">
+                    <img src="img/22.webmhd.png" class="big-image" />
+                    <h1 class="video-title">#5 Dandelion</h1>
             </div>
-          </div>
-        </div> 
-       -->
 
-        <div class="span12 desk">
-            <div class="office">
-                
-                <a data-toggle="lightbox" href="#tj1"><img src="http://images.mattmills.info/empty-desk_v1.jpg"></a>
-                <div id="tj1" class="lightbox hide fade"  tabindex="-1" role="dialog" aria-hidden="true">
-                     <div class='lightbox-header'>
-                          <button type="button" class="close" data-dismiss="lightbox" aria-hidden="true">&times;</button>
-                     </div>
-                     <div class='lightbox-content'>
-                          <img src="http://images.mattmills.info/tape1.jpg">
-                     </div>
-                </div>
+            <nav id="next-btn">
+                  <a href="#" class="next-icon"></a>
+            </nav>
+        </div>
                 <!--<a data-toggle="lightbox" href="#tj2"><img src="http://images.mattmills.info/tj2.png"></a>
                 <div id="tj2" class="lightbox hide fade"  tabindex="-1" role="dialog" aria-hidden="true">
                      <div class='lightbox-header'>
@@ -117,9 +203,8 @@
                           <img src="fake.jpg">
                      </div>
                 </div>-->
-            </div>
-        </div>
-        
+
+                     
 </div>
         
 
@@ -128,19 +213,144 @@
             </footer>
 
         </div> <!-- /container -->
+        <script>
+            $( "#desk" ).click(function() {
+            $( ".vidwrapper" ).show( "fold", 1000 );
+            });
+        </script>
+        <script>
+        $(function() {
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.js"><\/script>')</script>
+            // Use Modernizr to detect for touch devices, 
+            // which don't support autoplay and may have less bandwidth, 
+            // so just give them the poster images instead
+
+          var screenIndex = 1,
+              numScreens = $('.screen').length,
+              isTransitioning = false,
+              transitionDur = 1000,
+              BV,
+              videoPlayer,
+              isTouch = Modernizr.touch;
+              $bigImage = $('.big-image'),
+              $window = $(window);
+
+          if (!isTouch) {
+              // initialize BigVideo
+              BV = new $.BigVideo({forceAutoplay:isTouch});
+              BV.init();
+              showVideo();
+     
+              BV.getPlayer().addEvent('loadeddata', function() {
+                  onVideoLoaded();
+              });
+ 
+              // adjust image positioning so it lines up with video
+              $bigImage
+                  .css('position','relative')
+                  .imagesLoaded(adjustImagePositioning);
+              // and on window resize
+              $(window).on('resize', adjustImagePositioning);
+          }
+
+          // Next button click goes to next div
+          $('#next-btn').on('click', function(e) {
+              e.preventDefault();
+              if (!isTransitioning) {
+                  next();
+              }
+          });
+
+          function showVideo() {
+              BV.show($('#screen-'+screenIndex).attr('data-video'),{ambient:true});
+          }
+
+          function next() {
+              isTransitioning = true;
+               
+              // update video index, reset image opacity if starting over
+              if (screenIndex === numScreens) {
+                  $bigImage.css('opacity',1);
+                  screenIndex = 1;
+              } else {
+                  screenIndex++;
+              }
+               
+              if (!isTouch) {
+                  $('#big-video-wrap').transit({'left':'-100%'},transitionDur)
+              }
+                   
+              $('.wrapper').transit(
+                  {'left':'-'+(100*(screenIndex-1))+'%'},
+                  transitionDur,
+                  onTransitionComplete);
+              onTransitionComplete();
+          }
+
+          function onVideoLoaded() {
+              $('#screen-'+screenIndex).find('.big-image').transit({'opacity':0},500)
+          }
+
+          function onTransitionComplete() {
+              isTransitioning = false;
+              if (!isTouch) {
+                  $('#big-video-wrap').css('left',0);
+                  showVideo();
+              }
+          }
+
+          function adjustImagePositioning() {
+              $bigImage.each(function(){
+                  var $img = $(this),
+                      img = new Image();
+           
+                  img.src = $img.attr('src');
+           
+                  var windowWidth = $window.width(),
+                      windowHeight = $window.height(),
+                      r_w = windowHeight / windowWidth,
+                      i_w = img.width,
+                      i_h = img.height,
+                      r_i = i_h / i_w,
+                      new_w, new_h, new_left, new_top;
+           
+                  if( r_w > r_i ) {
+                      new_h   = windowHeight;
+                      new_w   = windowHeight / r_i;
+                  }
+                  else {
+                      new_h   = windowWidth * r_i;
+                      new_w   = windowWidth;
+                  }
+           
+                  $img.css({
+                      width   : new_w,
+                      height  : new_h,
+                      left    : ( windowWidth - new_w ) / 2,
+                      top     : ( windowHeight - new_h ) / 2
+                  })
+           
+              });
+ 
+          }
+
+        });
+        </script>
+
+        
 
         <script src="js/vendor/bootstrap.min.js"></script>
+        
+
 
         <script src="js/main.js"></script>
         <script src="js/vendor/bootstrap-lightbox.js"></script>
-        <script>
+        <!--<script>
             var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
             (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
             g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
             s.parentNode.insertBefore(g,s)}(document,'script'));
-        </script>
+        </script>-->
+        
     </body>
 </html>
