@@ -1,0 +1,416 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'grunt', '-g' ]
+2 info using npm@1.2.15
+3 info using node@v0.10.2
+4 verbose read json /usr/local/lib/package.json
+5 verbose read json /usr/local/lib/package.json
+6 verbose cache add [ 'grunt', null ]
+7 verbose cache add name=undefined spec="grunt" args=["grunt",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: 'grunt',
+8 verbose parsed url   path: 'grunt',
+8 verbose parsed url   href: 'grunt' }
+9 silly lockFile 20ff3fd8-grunt grunt
+10 verbose lock grunt /Users/mattmills/.npm/20ff3fd8-grunt.lock
+11 silly lockFile 20ff3fd8-grunt grunt
+12 silly lockFile 20ff3fd8-grunt grunt
+13 verbose addNamed [ 'grunt', '' ]
+14 verbose addNamed [ null, '' ]
+15 silly lockFile 55f1ff24-grunt grunt@
+16 verbose lock grunt@ /Users/mattmills/.npm/55f1ff24-grunt.lock
+17 silly addNameRange { name: 'grunt', range: '', hasData: false }
+18 verbose url raw grunt
+19 verbose url resolving [ 'https://registry.npmjs.org/', './grunt' ]
+20 verbose url resolved https://registry.npmjs.org/grunt
+21 info trying registry request attempt 1 at 12:11:15
+22 http GET https://registry.npmjs.org/grunt
+23 http 200 https://registry.npmjs.org/grunt
+24 silly registry.get cb [ 200,
+24 silly registry.get   { vary: 'Accept',
+24 silly registry.get     server: 'CouchDB/1.3.0 (Erlang OTP/R15B03)',
+24 silly registry.get     etag: '"1LX7PKCFE4SNS52DKESLKBW8B"',
+24 silly registry.get     date: 'Wed, 12 Jun 2013 16:11:15 GMT',
+24 silly registry.get     'content-type': 'application/json',
+24 silly registry.get     'content-length': '214723' } ]
+25 silly addNameRange number 2 { name: 'grunt', range: '', hasData: true }
+26 silly addNameRange versions [ 'grunt',
+26 silly addNameRange   [ '0.1.0',
+26 silly addNameRange     '0.1.1',
+26 silly addNameRange     '0.1.2',
+26 silly addNameRange     '0.2.0',
+26 silly addNameRange     '0.2.1',
+26 silly addNameRange     '0.2.2',
+26 silly addNameRange     '0.2.3',
+26 silly addNameRange     '0.2.4',
+26 silly addNameRange     '0.2.5',
+26 silly addNameRange     '0.2.6',
+26 silly addNameRange     '0.2.7',
+26 silly addNameRange     '0.2.8',
+26 silly addNameRange     '0.2.9',
+26 silly addNameRange     '0.2.10',
+26 silly addNameRange     '0.2.11',
+26 silly addNameRange     '0.2.12',
+26 silly addNameRange     '0.2.13',
+26 silly addNameRange     '0.2.14',
+26 silly addNameRange     '0.2.15',
+26 silly addNameRange     '0.3.0',
+26 silly addNameRange     '0.3.1',
+26 silly addNameRange     '0.3.2',
+26 silly addNameRange     '0.3.3',
+26 silly addNameRange     '0.3.4',
+26 silly addNameRange     '0.3.5',
+26 silly addNameRange     '0.3.6',
+26 silly addNameRange     '0.3.7',
+26 silly addNameRange     '0.3.8',
+26 silly addNameRange     '0.3.9',
+26 silly addNameRange     '0.3.10',
+26 silly addNameRange     '0.3.11',
+26 silly addNameRange     '0.3.12',
+26 silly addNameRange     '0.3.13a',
+26 silly addNameRange     '0.3.13',
+26 silly addNameRange     '0.3.14',
+26 silly addNameRange     '0.3.15',
+26 silly addNameRange     '0.3.16',
+26 silly addNameRange     '0.3.17',
+26 silly addNameRange     '0.4.0a',
+26 silly addNameRange     '0.4.0rc1',
+26 silly addNameRange     '0.4.0rc2',
+26 silly addNameRange     '0.4.0rc3',
+26 silly addNameRange     '0.4.0rc4',
+26 silly addNameRange     '0.4.0rc5',
+26 silly addNameRange     '0.4.0rc6',
+26 silly addNameRange     '0.4.0rc7',
+26 silly addNameRange     '0.4.0rc8',
+26 silly addNameRange     '0.4.0',
+26 silly addNameRange     '0.4.1' ] ]
+27 verbose addNamed [ 'grunt', '0.4.1' ]
+28 verbose addNamed [ '0.4.1', '0.4.1' ]
+29 silly lockFile f9e87dfe-grunt-0-4-1 grunt@0.4.1
+30 verbose lock grunt@0.4.1 /Users/mattmills/.npm/f9e87dfe-grunt-0-4-1.lock
+31 silly lockFile 782c54fc--npmjs-org-grunt-grunt-0-4-1-tgz https://registry.npmjs.org/grunt/-/grunt-0.4.1.tgz
+32 verbose lock https://registry.npmjs.org/grunt/-/grunt-0.4.1.tgz /Users/mattmills/.npm/782c54fc--npmjs-org-grunt-grunt-0-4-1-tgz.lock
+33 verbose addRemoteTarball [ 'https://registry.npmjs.org/grunt/-/grunt-0.4.1.tgz',
+33 verbose addRemoteTarball   'd5892e5680add9ed1befde9aa635cf46b8f49729' ]
+34 info retry fetch attempt 1 at 12:11:17
+35 verbose fetch to= /var/folders/fp/fpLm3zVHE-8w82OyHJN6Hk+++TI/-Tmp-/npm-3022/1371053477078-0.7965097432024777/tmp.tgz
+36 http GET https://registry.npmjs.org/grunt/-/grunt-0.4.1.tgz
+37 http 200 https://registry.npmjs.org/grunt/-/grunt-0.4.1.tgz
+38 silly shasum updated bytes 50034
+39 info shasum d5892e5680add9ed1befde9aa635cf46b8f49729
+39 info shasum /var/folders/fp/fpLm3zVHE-8w82OyHJN6Hk+++TI/-Tmp-/npm-3022/1371053477078-0.7965097432024777/tmp.tgz
+40 verbose tar unpack /var/folders/fp/fpLm3zVHE-8w82OyHJN6Hk+++TI/-Tmp-/npm-3022/1371053477078-0.7965097432024777/tmp.tgz
+41 silly lockFile 40a7d7d5-77078-0-7965097432024777-package /var/folders/fp/fpLm3zVHE-8w82OyHJN6Hk+++TI/-Tmp-/npm-3022/1371053477078-0.7965097432024777/package
+42 verbose lock /var/folders/fp/fpLm3zVHE-8w82OyHJN6Hk+++TI/-Tmp-/npm-3022/1371053477078-0.7965097432024777/package /Users/mattmills/.npm/40a7d7d5-77078-0-7965097432024777-package.lock
+43 silly lockFile 7420e9b2-77078-0-7965097432024777-tmp-tgz /var/folders/fp/fpLm3zVHE-8w82OyHJN6Hk+++TI/-Tmp-/npm-3022/1371053477078-0.7965097432024777/tmp.tgz
+44 verbose lock /var/folders/fp/fpLm3zVHE-8w82OyHJN6Hk+++TI/-Tmp-/npm-3022/1371053477078-0.7965097432024777/tmp.tgz /Users/mattmills/.npm/7420e9b2-77078-0-7965097432024777-tmp-tgz.lock
+45 silly gunzTarPerm modes [ '755', '644' ]
+46 silly gunzTarPerm extractEntry package.json
+47 silly gunzTarPerm extractEntry .npmignore
+48 silly gunzTarPerm extractEntry README.md
+49 silly gunzTarPerm extractEntry custom-gruntfile.js
+50 silly gunzTarPerm extractEntry Gruntfile.js
+51 silly gunzTarPerm extractEntry test/fixtures/a.js
+52 silly gunzTarPerm extractEntry test/fixtures/banner.js
+53 silly gunzTarPerm extractEntry test/fixtures/banner2.js
+54 silly gunzTarPerm extractEntry test/fixtures/banner3.js
+55 silly gunzTarPerm extractEntry test/fixtures/Gruntfile-print-text.js
+56 silly gunzTarPerm extractEntry test/fixtures/b.js
+57 silly gunzTarPerm extractEntry test/fixtures/spawn-multibyte.js
+58 silly gunzTarPerm extractEntry test/fixtures/spawn.js
+59 silly gunzTarPerm extractEntry test/fixtures/expand/README.md
+60 silly gunzTarPerm extractEntry test/fixtures/expand/css/baz.css
+61 silly gunzTarPerm extractEntry test/fixtures/expand/css/qux.css
+62 silly gunzTarPerm extractEntry test/fixtures/expand/deep/deep.txt
+63 silly gunzTarPerm extractEntry test/fixtures/expand/deep/deeper/deeper.txt
+64 silly gunzTarPerm extractEntry test/fixtures/expand/deep/deeper/deepest/deepest.txt
+65 silly gunzTarPerm extractEntry test/fixtures/expand/js/bar.js
+66 silly gunzTarPerm extractEntry test/fixtures/expand/js/foo.js
+67 silly gunzTarPerm extractEntry test/fixtures/expand-mapping-ext/dir.ectory/file-no-extension
+68 silly gunzTarPerm extractEntry test/fixtures/expand-mapping-ext/dir.ectory/sub.dir.ectory/file.ext.ension
+69 silly gunzTarPerm extractEntry test/fixtures/expand-mapping-ext/file.ext.ension
+70 silly gunzTarPerm extractEntry test/fixtures/files/dist/built-123-a.js
+71 silly gunzTarPerm extractEntry test/fixtures/files/dist/built-123-b.js
+72 silly gunzTarPerm extractEntry test/fixtures/files/dist/built-a.js
+73 silly gunzTarPerm extractEntry test/fixtures/files/dist/built-b.js
+74 silly gunzTarPerm extractEntry test/fixtures/files/dist/built.js
+75 silly gunzTarPerm extractEntry test/fixtures/files/src/file1-123.js
+76 silly gunzTarPerm extractEntry test/fixtures/files/src/file1.js
+77 silly gunzTarPerm extractEntry test/fixtures/files/src/file2-123.js
+78 silly gunzTarPerm extractEntry test/fixtures/files/src/file2.js
+79 silly gunzTarPerm extractEntry test/fixtures/utf8.yaml
+80 silly gunzTarPerm extractEntry test/fixtures/BOM.txt
+81 silly gunzTarPerm extractEntry test/fixtures/iso-8859-1.txt
+82 silly gunzTarPerm extractEntry test/fixtures/iso-8859-1.yaml
+83 silly gunzTarPerm extractEntry test/fixtures/lint.txt
+84 silly gunzTarPerm extractEntry test/fixtures/no_BOM.txt
+85 silly gunzTarPerm extractEntry test/fixtures/octocat.png
+86 silly gunzTarPerm extractEntry test/fixtures/exec.cmd
+87 silly gunzTarPerm extractEntry test/fixtures/exec.sh
+88 silly gunzTarPerm extractEntry test/fixtures/template.txt
+89 silly gunzTarPerm extractEntry test/fixtures/test.json
+90 silly gunzTarPerm extractEntry test/fixtures/utf8.json
+91 silly gunzTarPerm extractEntry test/fixtures/utf8.txt
+92 silly gunzTarPerm extractEntry test/fixtures/iso-8859-1.json
+93 silly gunzTarPerm extractEntry test/grunt/config_test.js
+94 silly gunzTarPerm extractEntry test/grunt/event_test.js
+95 silly gunzTarPerm extractEntry test/grunt/file_test.js
+96 silly gunzTarPerm extractEntry test/grunt/log_test.js
+97 silly gunzTarPerm extractEntry test/grunt/option_test.js
+98 silly gunzTarPerm extractEntry test/grunt/task_test.js
+99 silly gunzTarPerm extractEntry test/grunt/template_test.js
+100 silly gunzTarPerm extractEntry test/grunt/util_test.js
+101 silly gunzTarPerm extractEntry test/gruntfile/multi-task-files.js
+102 silly gunzTarPerm extractEntry test/util/namespace_test.js
+103 silly gunzTarPerm extractEntry test/util/task_test.js
+104 silly gunzTarPerm extractEntry .travis.yml
+105 silly gunzTarPerm extractEntry AUTHORS
+106 silly gunzTarPerm extractEntry lib/grunt.js
+107 silly gunzTarPerm extractEntry lib/grunt/cli.js
+108 silly gunzTarPerm extractEntry lib/grunt/event.js
+109 silly gunzTarPerm extractEntry lib/grunt/fail.js
+110 silly gunzTarPerm extractEntry lib/grunt/file.js
+111 silly gunzTarPerm extractEntry lib/grunt/config.js
+112 silly gunzTarPerm extractEntry lib/grunt/log.js
+113 silly gunzTarPerm extractEntry lib/grunt/option.js
+114 silly gunzTarPerm extractEntry lib/grunt/task.js
+115 silly gunzTarPerm extractEntry lib/grunt/template.js
+116 silly gunzTarPerm extractEntry lib/grunt/util.js
+117 silly gunzTarPerm extractEntry lib/grunt/help.js
+118 silly gunzTarPerm extractEntry lib/util/exit.js
+119 silly gunzTarPerm extractEntry lib/util/namespace.js
+120 silly gunzTarPerm extractEntry lib/util/task.js
+121 silly gunzTarPerm extractEntry LICENSE-MIT
+122 silly gunzTarPerm extractEntry CHANGELOG
+123 silly gunzTarPerm extractEntry CONTRIBUTING.md
+124 silly gunzTarPerm extractEntry docs/README.md
+125 verbose read json /var/folders/fp/fpLm3zVHE-8w82OyHJN6Hk+++TI/-Tmp-/npm-3022/1371053477078-0.7965097432024777/package/package.json
+126 silly lockFile 40a7d7d5-77078-0-7965097432024777-package /var/folders/fp/fpLm3zVHE-8w82OyHJN6Hk+++TI/-Tmp-/npm-3022/1371053477078-0.7965097432024777/package
+127 silly lockFile 40a7d7d5-77078-0-7965097432024777-package /var/folders/fp/fpLm3zVHE-8w82OyHJN6Hk+++TI/-Tmp-/npm-3022/1371053477078-0.7965097432024777/package
+128 silly lockFile 7420e9b2-77078-0-7965097432024777-tmp-tgz /var/folders/fp/fpLm3zVHE-8w82OyHJN6Hk+++TI/-Tmp-/npm-3022/1371053477078-0.7965097432024777/tmp.tgz
+129 silly lockFile 7420e9b2-77078-0-7965097432024777-tmp-tgz /var/folders/fp/fpLm3zVHE-8w82OyHJN6Hk+++TI/-Tmp-/npm-3022/1371053477078-0.7965097432024777/tmp.tgz
+130 verbose from cache /var/folders/fp/fpLm3zVHE-8w82OyHJN6Hk+++TI/-Tmp-/npm-3022/1371053477078-0.7965097432024777/package/package.json
+131 verbose tar pack [ '/Users/mattmills/.npm/grunt/0.4.1/package.tgz',
+131 verbose tar pack   '/var/folders/fp/fpLm3zVHE-8w82OyHJN6Hk+++TI/-Tmp-/npm-3022/1371053477078-0.7965097432024777/package' ]
+132 verbose tarball /Users/mattmills/.npm/grunt/0.4.1/package.tgz
+133 verbose folder /var/folders/fp/fpLm3zVHE-8w82OyHJN6Hk+++TI/-Tmp-/npm-3022/1371053477078-0.7965097432024777/package
+134 silly lockFile 40a7d7d5-77078-0-7965097432024777-package /var/folders/fp/fpLm3zVHE-8w82OyHJN6Hk+++TI/-Tmp-/npm-3022/1371053477078-0.7965097432024777/package
+135 verbose lock /var/folders/fp/fpLm3zVHE-8w82OyHJN6Hk+++TI/-Tmp-/npm-3022/1371053477078-0.7965097432024777/package /Users/mattmills/.npm/40a7d7d5-77078-0-7965097432024777-package.lock
+136 silly lockFile 7aa03c05-ills-npm-grunt-0-4-1-package-tgz /Users/mattmills/.npm/grunt/0.4.1/package.tgz
+137 verbose lock /Users/mattmills/.npm/grunt/0.4.1/package.tgz /Users/mattmills/.npm/7aa03c05-ills-npm-grunt-0-4-1-package-tgz.lock
+138 silly lockFile 40a7d7d5-77078-0-7965097432024777-package /var/folders/fp/fpLm3zVHE-8w82OyHJN6Hk+++TI/-Tmp-/npm-3022/1371053477078-0.7965097432024777/package
+139 silly lockFile 40a7d7d5-77078-0-7965097432024777-package /var/folders/fp/fpLm3zVHE-8w82OyHJN6Hk+++TI/-Tmp-/npm-3022/1371053477078-0.7965097432024777/package
+140 silly lockFile 7aa03c05-ills-npm-grunt-0-4-1-package-tgz /Users/mattmills/.npm/grunt/0.4.1/package.tgz
+141 silly lockFile 7aa03c05-ills-npm-grunt-0-4-1-package-tgz /Users/mattmills/.npm/grunt/0.4.1/package.tgz
+142 silly lockFile fbf78a93-attmills-npm-grunt-0-4-1-package /Users/mattmills/.npm/grunt/0.4.1/package
+143 verbose lock /Users/mattmills/.npm/grunt/0.4.1/package /Users/mattmills/.npm/fbf78a93-attmills-npm-grunt-0-4-1-package.lock
+144 silly lockFile fbf78a93-attmills-npm-grunt-0-4-1-package /Users/mattmills/.npm/grunt/0.4.1/package
+145 silly lockFile fbf78a93-attmills-npm-grunt-0-4-1-package /Users/mattmills/.npm/grunt/0.4.1/package
+146 verbose tar unpack /Users/mattmills/.npm/grunt/0.4.1/package.tgz
+147 silly lockFile fbf78a93-attmills-npm-grunt-0-4-1-package /Users/mattmills/.npm/grunt/0.4.1/package
+148 verbose lock /Users/mattmills/.npm/grunt/0.4.1/package /Users/mattmills/.npm/fbf78a93-attmills-npm-grunt-0-4-1-package.lock
+149 silly lockFile 7aa03c05-ills-npm-grunt-0-4-1-package-tgz /Users/mattmills/.npm/grunt/0.4.1/package.tgz
+150 verbose lock /Users/mattmills/.npm/grunt/0.4.1/package.tgz /Users/mattmills/.npm/7aa03c05-ills-npm-grunt-0-4-1-package-tgz.lock
+151 silly gunzTarPerm modes [ '755', '644' ]
+152 silly gunzTarPerm extractEntry package.json
+153 silly gunzTarPerm extractEntry .npmignore
+154 silly gunzTarPerm extractEntry README.md
+155 silly gunzTarPerm extractEntry Gruntfile.js
+156 silly gunzTarPerm extractEntry custom-gruntfile.js
+157 silly gunzTarPerm extractEntry test/fixtures/a.js
+158 silly gunzTarPerm extractEntry test/fixtures/b.js
+159 silly gunzTarPerm extractEntry test/fixtures/banner.js
+160 silly gunzTarPerm extractEntry test/fixtures/banner2.js
+161 silly gunzTarPerm extractEntry test/fixtures/banner3.js
+162 silly gunzTarPerm extractEntry test/fixtures/Gruntfile-print-text.js
+163 silly gunzTarPerm extractEntry test/fixtures/spawn-multibyte.js
+164 silly gunzTarPerm extractEntry test/fixtures/spawn.js
+165 silly gunzTarPerm extractEntry test/fixtures/iso-8859-1.json
+166 silly gunzTarPerm extractEntry test/fixtures/expand/README.md
+167 silly gunzTarPerm extractEntry test/fixtures/expand/css/baz.css
+168 silly gunzTarPerm extractEntry test/fixtures/expand/css/qux.css
+169 silly gunzTarPerm extractEntry test/fixtures/expand/deep/deep.txt
+170 silly gunzTarPerm extractEntry test/fixtures/expand/deep/deeper/deeper.txt
+171 silly gunzTarPerm extractEntry test/fixtures/expand/deep/deeper/deepest/deepest.txt
+172 silly gunzTarPerm extractEntry test/fixtures/expand/js/bar.js
+173 silly gunzTarPerm extractEntry test/fixtures/expand/js/foo.js
+174 silly gunzTarPerm extractEntry test/fixtures/expand-mapping-ext/dir.ectory/file-no-extension
+175 silly gunzTarPerm extractEntry test/fixtures/expand-mapping-ext/dir.ectory/sub.dir.ectory/file.ext.ension
+176 silly gunzTarPerm extractEntry test/fixtures/expand-mapping-ext/file.ext.ension
+177 silly gunzTarPerm extractEntry test/fixtures/files/dist/built-123-a.js
+178 silly gunzTarPerm extractEntry test/fixtures/files/dist/built-123-b.js
+179 silly gunzTarPerm extractEntry test/fixtures/files/dist/built-a.js
+180 silly gunzTarPerm extractEntry test/fixtures/files/dist/built-b.js
+181 silly gunzTarPerm extractEntry test/fixtures/files/dist/built.js
+182 silly gunzTarPerm extractEntry test/fixtures/files/src/file1-123.js
+183 silly gunzTarPerm extractEntry test/fixtures/files/src/file1.js
+184 silly gunzTarPerm extractEntry test/fixtures/files/src/file2-123.js
+185 silly gunzTarPerm extractEntry test/fixtures/files/src/file2.js
+186 silly gunzTarPerm extractEntry test/fixtures/BOM.txt
+187 silly gunzTarPerm extractEntry test/fixtures/iso-8859-1.txt
+188 silly gunzTarPerm extractEntry test/fixtures/iso-8859-1.yaml
+189 silly gunzTarPerm extractEntry test/fixtures/lint.txt
+190 silly gunzTarPerm extractEntry test/fixtures/no_BOM.txt
+191 silly gunzTarPerm extractEntry test/fixtures/octocat.png
+192 silly gunzTarPerm extractEntry test/fixtures/exec.cmd
+193 silly gunzTarPerm extractEntry test/fixtures/exec.sh
+194 silly gunzTarPerm extractEntry test/fixtures/template.txt
+195 silly gunzTarPerm extractEntry test/fixtures/test.json
+196 silly gunzTarPerm extractEntry test/fixtures/utf8.json
+197 silly gunzTarPerm extractEntry test/fixtures/utf8.txt
+198 silly gunzTarPerm extractEntry test/fixtures/utf8.yaml
+199 silly gunzTarPerm extractEntry test/grunt/config_test.js
+200 silly gunzTarPerm extractEntry test/grunt/event_test.js
+201 silly gunzTarPerm extractEntry test/grunt/file_test.js
+202 silly gunzTarPerm extractEntry test/grunt/log_test.js
+203 silly gunzTarPerm extractEntry test/grunt/option_test.js
+204 silly gunzTarPerm extractEntry test/grunt/task_test.js
+205 silly gunzTarPerm extractEntry test/grunt/template_test.js
+206 silly gunzTarPerm extractEntry test/grunt/util_test.js
+207 silly gunzTarPerm extractEntry test/gruntfile/multi-task-files.js
+208 silly gunzTarPerm extractEntry test/util/namespace_test.js
+209 silly gunzTarPerm extractEntry test/util/task_test.js
+210 silly gunzTarPerm extractEntry .travis.yml
+211 silly gunzTarPerm extractEntry AUTHORS
+212 silly gunzTarPerm extractEntry CHANGELOG
+213 silly gunzTarPerm extractEntry docs/README.md
+214 silly gunzTarPerm extractEntry lib/grunt.js
+215 silly gunzTarPerm extractEntry lib/grunt/cli.js
+216 silly gunzTarPerm extractEntry lib/grunt/event.js
+217 silly gunzTarPerm extractEntry lib/grunt/fail.js
+218 silly gunzTarPerm extractEntry lib/grunt/file.js
+219 silly gunzTarPerm extractEntry lib/grunt/config.js
+220 silly gunzTarPerm extractEntry lib/grunt/log.js
+221 silly gunzTarPerm extractEntry lib/grunt/option.js
+222 silly gunzTarPerm extractEntry lib/grunt/task.js
+223 silly gunzTarPerm extractEntry lib/grunt/template.js
+224 silly gunzTarPerm extractEntry lib/grunt/util.js
+225 silly gunzTarPerm extractEntry lib/grunt/help.js
+226 silly gunzTarPerm extractEntry lib/util/exit.js
+227 silly gunzTarPerm extractEntry lib/util/namespace.js
+228 silly gunzTarPerm extractEntry lib/util/task.js
+229 silly gunzTarPerm extractEntry CONTRIBUTING.md
+230 silly gunzTarPerm extractEntry LICENSE-MIT
+231 verbose read json /Users/mattmills/.npm/grunt/0.4.1/package/package.json
+232 silly lockFile fbf78a93-attmills-npm-grunt-0-4-1-package /Users/mattmills/.npm/grunt/0.4.1/package
+233 silly lockFile fbf78a93-attmills-npm-grunt-0-4-1-package /Users/mattmills/.npm/grunt/0.4.1/package
+234 silly lockFile 7aa03c05-ills-npm-grunt-0-4-1-package-tgz /Users/mattmills/.npm/grunt/0.4.1/package.tgz
+235 silly lockFile 7aa03c05-ills-npm-grunt-0-4-1-package-tgz /Users/mattmills/.npm/grunt/0.4.1/package.tgz
+236 silly shasum updated bytes 49995
+237 info shasum 7fbb874a8e07536290c2a65e16c39c6b9812b02b
+237 info shasum /Users/mattmills/.npm/grunt/0.4.1/package.tgz
+238 verbose from cache /Users/mattmills/.npm/grunt/0.4.1/package/package.json
+239 verbose chmod /Users/mattmills/.npm/grunt/0.4.1/package.tgz 644
+240 verbose chown /Users/mattmills/.npm/grunt/0.4.1/package.tgz [ 501, 501 ]
+241 silly lockFile 782c54fc--npmjs-org-grunt-grunt-0-4-1-tgz https://registry.npmjs.org/grunt/-/grunt-0.4.1.tgz
+242 silly lockFile 782c54fc--npmjs-org-grunt-grunt-0-4-1-tgz https://registry.npmjs.org/grunt/-/grunt-0.4.1.tgz
+243 silly lockFile f9e87dfe-grunt-0-4-1 grunt@0.4.1
+244 silly lockFile f9e87dfe-grunt-0-4-1 grunt@0.4.1
+245 silly lockFile 55f1ff24-grunt grunt@
+246 silly lockFile 55f1ff24-grunt grunt@
+247 silly resolved [ { name: 'grunt',
+247 silly resolved     description: 'The JavaScript Task Runner',
+247 silly resolved     version: '0.4.1',
+247 silly resolved     author: { name: '"Cowboy" Ben Alman', url: 'http://benalman.com/' },
+247 silly resolved     homepage: 'http://gruntjs.com/',
+247 silly resolved     repository: { type: 'git', url: 'git://github.com/gruntjs/grunt.git' },
+247 silly resolved     bugs: { url: 'http://github.com/gruntjs/grunt/issues' },
+247 silly resolved     licenses: [ [Object] ],
+247 silly resolved     main: 'lib/grunt',
+247 silly resolved     scripts: { test: 'grunt test' },
+247 silly resolved     engines: { node: '>= 0.8.0' },
+247 silly resolved     keywords:
+247 silly resolved      [ 'task',
+247 silly resolved        'async',
+247 silly resolved        'cli',
+247 silly resolved        'minify',
+247 silly resolved        'uglify',
+247 silly resolved        'build',
+247 silly resolved        'lodash',
+247 silly resolved        'unit',
+247 silly resolved        'test',
+247 silly resolved        'qunit',
+247 silly resolved        'nodeunit',
+247 silly resolved        'server',
+247 silly resolved        'init',
+247 silly resolved        'scaffold',
+247 silly resolved        'make',
+247 silly resolved        'jake',
+247 silly resolved        'tool' ],
+247 silly resolved     dependencies:
+247 silly resolved      { async: '~0.1.22',
+247 silly resolved        'coffee-script': '~1.3.3',
+247 silly resolved        colors: '~0.6.0-1',
+247 silly resolved        dateformat: '1.0.2-1.2.3',
+247 silly resolved        eventemitter2: '~0.4.9',
+247 silly resolved        'findup-sync': '~0.1.0',
+247 silly resolved        glob: '~3.1.21',
+247 silly resolved        hooker: '~0.2.3',
+247 silly resolved        'iconv-lite': '~0.2.5',
+247 silly resolved        minimatch: '~0.2.6',
+247 silly resolved        nopt: '~1.0.10',
+247 silly resolved        rimraf: '~2.0.2',
+247 silly resolved        lodash: '~0.9.0',
+247 silly resolved        'underscore.string': '~2.2.0rc',
+247 silly resolved        which: '~1.0.5',
+247 silly resolved        'js-yaml': '~2.0.2' },
+247 silly resolved     devDependencies:
+247 silly resolved      { temporary: '~0.0.4',
+247 silly resolved        'grunt-contrib-jshint': '~0.1.1',
+247 silly resolved        'grunt-contrib-nodeunit': '~0.1.2',
+247 silly resolved        'grunt-contrib-watch': '~0.2.0',
+247 silly resolved        difflet: '~0.2.3' },
+247 silly resolved     contributors: [ [Object], [Object], [Object], [Object] ],
+247 silly resolved     readme: '# Grunt: The JavaScript Task Runner [![Build Status](https://secure.travis-ci.org/gruntjs/grunt.png?branch=master)](http://travis-ci.org/gruntjs/grunt)\n\n### Documentation\n\nVisit the [gruntjs.com](http://gruntjs.com/) website for all the things.\n\n### Support / Contributing\nBefore you make an issue, please read our [Contributing](http://gruntjs.com/contributing) guide.\n\nYou can find the grunt team in [#grunt on irc.freenode.net](irc://irc.freenode.net/#grunt).\n\n### Release History\nSee the [CHANGELOG](CHANGELOG).\n',
+247 silly resolved     readmeFilename: 'README.md',
+247 silly resolved     _id: 'grunt@0.4.1',
+247 silly resolved     dist: { shasum: '7fbb874a8e07536290c2a65e16c39c6b9812b02b' },
+247 silly resolved     _from: 'grunt@',
+247 silly resolved     _resolved: 'https://registry.npmjs.org/grunt/-/grunt-0.4.1.tgz' } ]
+248 info install grunt@0.4.1 into /usr/local/lib
+249 info installOne grunt@0.4.1
+250 verbose from cache /Users/mattmills/.npm/grunt/0.4.1/package/package.json
+251 info /usr/local/lib/node_modules/grunt unbuild
+252 verbose read json /usr/local/lib/node_modules/grunt/package.json
+253 verbose tar unpack /Users/mattmills/.npm/grunt/0.4.1/package.tgz
+254 silly lockFile 37320430-usr-local-lib-node-modules-grunt /usr/local/lib/node_modules/grunt
+255 verbose lock /usr/local/lib/node_modules/grunt /Users/mattmills/.npm/37320430-usr-local-lib-node-modules-grunt.lock
+256 silly lockFile 7aa03c05-ills-npm-grunt-0-4-1-package-tgz /Users/mattmills/.npm/grunt/0.4.1/package.tgz
+257 verbose lock /Users/mattmills/.npm/grunt/0.4.1/package.tgz /Users/mattmills/.npm/7aa03c05-ills-npm-grunt-0-4-1-package-tgz.lock
+258 silly gunzTarPerm modes [ '755', '644' ]
+259 error Error: EACCES, mkdir '/usr/local/lib/node_modules/grunt'
+259 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/grunt']
+259 error   errno: 3,
+259 error   code: 'EACCES',
+259 error   path: '/usr/local/lib/node_modules/grunt',
+259 error   fstream_type: 'Directory',
+259 error   fstream_path: '/usr/local/lib/node_modules/grunt',
+259 error   fstream_class: 'DirWriter',
+259 error   fstream_stack:
+259 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+259 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:37:53',
+259 error      'Object.oncomplete (fs.js:107:15)' ] }
+260 error Please try running this command again as root/Administrator.
+261 error System Darwin 10.8.0
+262 error command "node" "/usr/local/bin/npm" "install" "grunt" "-g"
+263 error cwd /Applications/MAMP/htdocs/tapejob/js
+264 error node -v v0.10.2
+265 error npm -v 1.2.15
+266 error path /usr/local/lib/node_modules/grunt
+267 error fstream_path /usr/local/lib/node_modules/grunt
+268 error fstream_type Directory
+269 error fstream_class DirWriter
+270 error code EACCES
+271 error errno 3
+272 error stack Error: EACCES, mkdir '/usr/local/lib/node_modules/grunt'
+273 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+273 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:37:53
+273 error fstream_stack Object.oncomplete (fs.js:107:15)
+274 verbose exit [ 3, true ]

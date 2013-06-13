@@ -45,7 +45,7 @@
         var ua = navigator.userAgent.toLowerCase();
         var isFirefox = ua.indexOf('firefox') != -1;
         if (settings.useFlashForFirefox && (isFirefox)) {
-			VideoJS.options.techOrder = ['flash'];
+			//VideoJS.options.techOrder = ['flash'];
 		}
 
 

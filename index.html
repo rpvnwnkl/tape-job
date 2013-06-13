@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <!--<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">-->
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
@@ -21,11 +21,11 @@
         <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
         <link rel="stylesheet" href="css/bootstrap-lightbox.min.css">
         <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <link href="css/video-js.css" rel="stylesheet">
+        <script src="js/video.js"></script>
         <link rel="stylesheet" href="css/bigvideo.css">
 
-        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-        <link href="http://vjs.zencdn.net/4.0/video-js.css" rel="stylesheet">
-        <script src="http://vjs.zencdn.net/4.0/video.js"></script>
         <style>
             .vidwrapper {
             display: none;
@@ -36,11 +36,12 @@
     <body>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.js"><\/script>')</script>
+                <script src="js/jquery-ui-1.10.3.custom.js"></script>  
+
         <script src="js/jquery.imagesloaded.min.js"></script>
-        <script src="js/jquery-ui-1.10.3.custom.js"></script>  
         <script src="js/jquery.scrollTo.js"></script>
         <script src="js/bigvideo.js"></script>
-        <script src="js/jquery.transit.min.js"></script>
+        <script src="js/jquery.transit.js"></script>
         
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
@@ -71,102 +72,109 @@
         </div>
         
         <div class="span12 office nomargin">
-            <a id="desk" href=""><img src="http://images.mattmills.info/empty-desk_v1.jpg"></a>
+            <img id="desk" src="http://images.mattmills.info/empty-desk_v1.jpg">
         </div>     
-            <div class="vidwrapper">
-                  <div class="screen" id="screen-1" data-video="vid/1.webmhd.webm">
-                    <img src="img/1.webmhd.png" class="big-image" />
-                    <h1 class="video-title">#1 Bird</h1>
-                  </div>
-                  <div class="screen" id="screen-2" data-video="vid/2.webmhd.webm">
-                    <img src="img/2.webmhd.png" class="big-image" />
-                    <h1 class="video-title">#2 Satellite</h1>
-                  </div>
-                  <div class="screen" id="screen-3" data-video="vid/3.webmhd.webm">
-                    <img src="img/3.webmhd.png" class="big-image" />
-                    <h1 class="video-title">#3 Camera</h1>
-                  </div>
-                  <div class="screen" id="screen-4" data-video="vid/4.webmhd.webm">
-                    <img src="img/4.webmhd.png" class="big-image" />
-                    <h1 class="video-title">#4 Spider</h1>
-                  </div>
-                  <div class="screen" id="screen-5" data-video="vid/5.webmhd.webm">
-                    <img src="img/5.webmhd.png" class="big-image" />
-                    <h1 class="video-title">#5 Dandelion</h1>
-                  </div>
-                  <div class="screen" id="screen-6" data-video="vid/6.webmhd.webm">
-                    <img src="img/6.webmhd.png" class="big-image" />
-                    <h1 class="video-title">#1 Bird</h1>
-                  </div>
-                  <div class="screen" id="screen-7" data-video="vid/7.webmhd.webm">
-                    <img src="img/7.webmhd.png" class="big-image" />
-                    <h1 class="video-title">#2 Satellite</h1>
-                  </div>
-                  <div class="screen" id="screen-8" data-video="vid/8.webmhd.webm">
-                    <img src="img/8.webmhd.png" class="big-image" />
-                    <h1 class="video-title">#3 Camera</h1>
-                  </div>
-                  <div class="screen" id="screen-9" data-video="vid/9.webmhd.webm">
-                    <img src="img/9.webmhd.png" class="big-image" />
-                    <h1 class="video-title">#4 Spider</h1>
-                  </div>
-                  <div class="screen" id="screen-10" data-video="vid/10.webmhd.webm">
-                    <img src="img/10.webmhd.png" class="big-image" />
-                    <h1 class="video-title">#5 Dandelion</h1>
-                  </div>
-                  <div class="screen" id="screen-11" data-video="vid/11.webmhd.webm">
-                    <img src="img/11.webmhd.png" class="big-image" />
-                    <h1 class="video-title">#1 Bird</h1>
-                  </div>  
-                  <div class="screen" id="screen-12" data-video="vid/12.webmhd.webm">
-                    <img src="img/12.webmhd.png" class="big-image" />
-                    <h1 class="video-title">#1 Bird</h1>
-                  </div>
-                  <div class="screen" id="screen-13" data-video="vid/13.webmhd.webm">
-                    <img src="img/13.webmhd.png" class="big-image" />
-                    <h1 class="video-title">#2 Satellite</h1>
-                  </div>
-                  <div class="screen" id="screen-14" data-video="vid/14.webmhd.webm">
-                    <img src="img/14.webmhd.png" class="big-image" />
-                    <h1 class="video-title">#3 Camera</h1>
-                  </div>
-                  <div class="screen" id="screen-15" data-video="vid/15.webmhd.webm">
-                    <img src="img/15.webmhd.png" class="big-image" />
-                    <h1 class="video-title">#4 Spider</h1>
-                  </div>
-                  <div class="screen" id="screen-16" data-video="vid/16.webmhd.webm">
-                    <img src="img/16.webmhd.png" class="big-image" />
-                    <h1 class="video-title">#5 Dandelion</h1>
-                  </div>
-                  <div class="screen" id="screen-17" data-video="vid/17.webmhd.webm">
-                    <img src="img/17.webmhd.png" class="big-image" />
-                    <h1 class="video-title">#1 Bird</h1>
-                  </div>
-                  <div class="screen" id="screen-18" data-video="vid/18.webmhd.webm">
-                    <img src="img/18.webmhd.png" class="big-image" />
-                    <h1 class="video-title">#2 Satellite</h1>
-                  </div>
-                  <div class="screen" id="screen-19" data-video="vid/19.webmhd.webm">
-                    <img src="img/19.webmhd.png" class="big-image" />
-                    <h1 class="video-title">#3 Camera</h1>
-                  </div>
-                  <div class="screen" id="screen-20" data-video="vid/20.webmhd.webm">
-                    <img src="img/20.webmhd.png" class="big-image" />
-                    <h1 class="video-title">#4 Spider</h1>
-                  </div>
-                  <div class="screen" id="screen-21" data-video="vid/21.webmhd.webm">
-                    <img src="img/21.webmhd.png" class="big-image" />
-                    <h1 class="video-title">#5 Dandelion</h1>
-                  </div> 
-                  <div class="screen" id="screen-22" data-video="vid/22.webmhd.webm">
-                    <img src="img/22.webmhd.png" class="big-image" />
-                    <h1 class="video-title">#5 Dandelion</h1>
-            </div>
+      </div>
+            <div class="vidwrapper row-fluid">
+                      <div id="rightblock" class="span6 noseeum">
+                      </div>
+                      <div id="leftblock" class='span6 noseeum'>
+                      </div>
 
+                      <div class="screen" id="screen-1" data-video="vid/1.webmhd.webm">
+                        <img src="img/1.webmhd.png" class="big-image" />
+                      </div>
+                  
+
+                      <div class="screen" id="screen-2" data-video="vid/2.webmhd.webm">
+                        <img src="img/2.webmhd.png" class="big-image" />
+                      </div>
+                
+                      <div class="screen" id="screen-3" data-video="vid/3.webmhd.webm">
+                        <img src="img/3.webmhd.png" class="big-image" />
+                      </div>
+                 
+                      <div class="screen" id="screen-4" data-video="vid/4.webmhd.webm">
+                        <img src="img/4.webmhd.png" class="big-image" />
+                      </div>
+                
+                      <div class="screen" id="screen-5" data-video="vid/5.webmhd.webm">
+                        <img src="img/5.webmhd.png" class="big-image" />
+                      </div>
+                 
+                      <div class="screen" id="screen-6" data-video="vid/6.webmhd.webm">
+                        <img src="img/6.webmhd.png" class="big-image" />
+                      </div>
+                
+                      <div class="screen" id="screen-7" data-video="vid/7.webmhd.webm">
+                        <img src="img/7.webmhd.png" class="big-image" />
+                      </div>
+               
+                      <div class="screen" id="screen-8" data-video="vid/8.webmhd.webm">
+                        <img src="img/8.webmhd.png" class="big-image" />
+                      </div>
+                
+                      <div class="screen" id="screen-9" data-video="vid/9.webmhd.webm">
+                        <img src="img/9.webmhd.png" class="big-image" />
+                      </div>
+                
+                      <div class="screen" id="screen-10" data-video="vid/10.webmhd.webm">
+                        <img src="img/10.webmhd.png" class="big-image" />
+                      </div>
+                 
+                      <div class="screen" id="screen-11" data-video="vid/11.webmhd.webm">
+                        <img src="img/11.webmhd.png" class="big-image" />
+                      </div>  
+                 
+                      <div class="screen" id="screen-12" data-video="vid/12.webmhd.webm">
+                        <img src="img/12.webmhd.png" class="big-image" />
+                      </div>
+               
+                      <div class="screen" id="screen-13" data-video="vid/13.webmhd.webm">
+                        <img src="img/13.webmhd.png" class="big-image" />
+                      </div>
+
+                      <div class="screen" id="screen-14" data-video="vid/14.webmhd.webm">
+                        <img src="img/14.webmhd.png" class="big-image" />
+                      </div>
+                  
+                      <div class="screen" id="screen-15" data-video="vid/15.webmhd.webm">
+                        <img src="img/15.webmhd.png" class="big-image" />
+                      </div>
+                
+                      <div class="screen" id="screen-16" data-video="vid/16.webmhd.webm">
+                        <img src="img/16.webmhd.png" class="big-image" />
+                      </div>
+                  
+                      <div class="screen" id="screen-17" data-video="vid/17.webmhd.webm">
+                        <img src="img/17.webmhd.png" class="big-image" />
+                      </div>
+                  
+                      <div class="screen" id="screen-18" data-video="vid/18.webmhd.webm">
+                        <img src="img/18.webmhd.png" class="big-image" />
+                      </div>
+                 
+                      <div class="screen" id="screen-19" data-video="vid/19.webmhd.webm">
+                        <img src="img/19.webmhd.png" class="big-image" />
+                      </div>
+                 
+                      <div class="screen" id="screen-20" data-video="vid/20.webmhd.webm">
+                        <img src="img/20.webmhd.png" class="big-image" />
+                      </div>
+                  
+                      <div class="screen" id="screen-21" data-video="vid/21.webmhd.webm">
+                        <img src="img/21.webmhd.png" class="big-image" />
+                      </div> 
+                  
+                      <div class="screen" id="screen-22" data-video="vid/22.webmhd.webm">
+                        <img src="img/22.webmhd.png" class="big-image" />
+                      </div>
+                
+            </div>
+          </div>
             <nav id="next-btn">
-                  <a href="#" class="next-icon"></a>
+                  <a href="#" class="next-icon"><img src="fake.jpg"></a>
             </nav>
-        </div>
                 <!--<a data-toggle="lightbox" href="#tj2"><img src="http://images.mattmills.info/tj2.png"></a>
                 <div id="tj2" class="lightbox hide fade"  tabindex="-1" role="dialog" aria-hidden="true">
                      <div class='lightbox-header'>
@@ -204,21 +212,33 @@
                      </div>
                 </div>-->
 
-                     
-</div>
-        
+                            
 
-            <footer>
-                <p>&copy; Company 2012</p>
-            </footer>
-
-        </div> <!-- /container -->
+           
         <script>
             $( "#desk" ).click(function() {
             $( ".vidwrapper" ).show( "fold", 1000 );
+
             });
         </script>
         <script>
+            $( ".big-image" ).click(function() {
+            $( ".vidwrapper" ).hide( "fold", 1000 );
+          
+            });
+        </script> 
+        <script>
+            $( "#rightblock" ).click(function() {
+                //$( $('#screen-'+screenIndex)).fadeOut();
+                showVideo();
+                //next();
+
+            });
+        </script>       
+
+
+
+      <script>
         $(function() {
 
             // Use Modernizr to detect for touch devices, 
@@ -237,13 +257,14 @@
 
           if (!isTouch) {
               // initialize BigVideo
-              BV = new $.BigVideo({forceAutoplay:isTouch});
+              BV = new $.BigVideo('forceAutoplay:isTouch');
               BV.init();
               showVideo();
      
               BV.getPlayer().addEvent('loadeddata', function() {
                   onVideoLoaded();
-              });
+              }
+              );
  
               // adjust image positioning so it lines up with video
               $bigImage
@@ -256,13 +277,15 @@
           // Next button click goes to next div
           $('#next-btn').on('click', function(e) {
               e.preventDefault();
-              if (!isTransitioning) {
-                  next();
+              if (!isTransitioning){
+                next();
+              
               }
           });
 
+
           function showVideo() {
-              BV.show($('#screen-'+screenIndex).attr('data-video'),{ambient:true});
+              BV.show($('#screen-'+screenIndex).attr('data-video'));
           }
 
           function next() {
@@ -277,10 +300,10 @@
               }
                
               if (!isTouch) {
-                  $('#big-video-wrap').transit({'left':'-100%'},transitionDur)
+                  $('#vidwrapper').transit({'left':'-100%'},transitionDur)
               }
                    
-              $('.wrapper').transit(
+              $('.vidwrapper').transit(
                   {'left':'-'+(100*(screenIndex-1))+'%'},
                   transitionDur,
                   onTransitionComplete);

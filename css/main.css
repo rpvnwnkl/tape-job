@@ -4,7 +4,9 @@
 
 @import url(http://fonts.googleapis.com/css?family=Play);
 @import url(http://fonts.googleapis.com/css?family=Alfa+Slab+One);
+
 html, body {
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
   font-size: 100%;
@@ -32,16 +34,7 @@ h3 { font-size: 1.5em; }
 .middle {
 vertical-align: middle;
 }
-.gd {
-background-image: url('http://images.mattmills.info/me1.jpg');
-}
 
-.od {
-background-image: url('http://images.mattmills.info/me1.jpg');
-}
-.fa {
-background-image: url('http://images.mattmills.info/me1.jpg');
-}
 
 .pagetitle h1 {
     margin-left: 8%;
@@ -221,9 +214,11 @@ background-position: center top;
 /* big video css properties from http://tinyurl.com/pm2e9tr */
 .vidwrapper {
     position: absolute;
+    top:0;
     width: 2200%;
     height: 100%;
-    z-index: 1000;
+    z-index: 0;
+    overflow: hidden;
 }
 
 .screen {
@@ -249,8 +244,7 @@ background-position: center top;
     background: #000; 
     border-radius: 40px; 
     opacity: .4; 
-    cursor: pointer;}
-    nav: hover {
+    cursor: pointer;
     opacity: .6;
 }
  
@@ -269,4 +263,35 @@ background-position: center top;
     transform: rotate(45deg);
     color: #fff;
     text-decoration: none;
+    z-index:2500;
+}
+nav#next-btn {
+    position:absolute; 
+    right: 5%; 
+    top: 45%; 
+    padding: 20px; 
+    background: #000; 
+    border-radius: 40px; 
+    opacity: .4; 
+    cursor: pointer;
+    z-index:2501;
+  }
+
+nav#next-btn: hover {
+    opacity: .6;
+}
+
+.noseeum {
+  height:100%;
+  position: fixed;
+  top:0;
+  z-index:2000;
+  display: inline-block;
+  background
+}
+
+.bigwrapfix {
+  position: fixed;
+  top:0;
+  z-index:-2;
 }
