@@ -236,6 +236,10 @@ background-position: center top;
     width: auto; 
 }
 
+#big-video-vid {
+  z-index:2000;
+}
+
 .office nav {
     position:absolute; 
     right: 5%; 
@@ -281,13 +285,26 @@ nav#next-btn: hover {
     opacity: .6;
 }
 
-.noseeum {
+.noseeum1 {
   height:100%;
   position: fixed;
+  float:left;
   top:0;
-  z-index:2000;
-  display: inline-block;
-  background
+  left:0;
+  z-index:2001;
+  display: block;
+  background-color: rgba(255, 0, 0, 0.5)
+}
+
+.noseeum2 {
+  height:100%;
+  position: fixed;
+  float:left;
+  top:0;
+  right:0;
+  z-index:2001;
+  display: block;
+  background-color: rgba(255, 0, 0, 0.5)
 }
 
 .bigwrapfix {

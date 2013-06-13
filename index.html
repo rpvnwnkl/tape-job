@@ -66,7 +66,7 @@
         <div class="span12 flush text-left clearfix">
         <p>This is a working man's world.</p> 
         <p>Most of us show up day after day, do our work, and go home. We push our pencil around, answering someone else's questions. We peck at our keyboard, balancing someone else's budget sheet. We're in here but the World's outside, buying and selling, dancing the dance of consumerism: puppets on the stage of capitalism. We feel separated and yet inexorably tied to both the puppets and the hands above.</p>
-        <p>And because of this, your inflexible role in this system hangs over you like the anticipation of a deep grey rain cloud and its immenent release. Because the sickening truth is you are person who is not a person, you're a cog in the machine; you follow instructions, policy, protocol, and directions, so that the world outside can buy this, and use that, and continue to consume. What you won't do someone else will. And we do it so we don't lose our job, so we don't lose our paycheck, so we won't default on our mortgage, on our car payment, on our school loans. We are, unfortunately, caught in the middle, a string in this puppet show.</p>
+        <p>And because of this, your inflexible role in this system hangs over you like a deep grey rain cloud waiting to release. Because the sickening truth is you are person who is not a person, you're a cog in the machine; you follow instructions, policy, protocol, and directions, so that the world outside can buy this, and use that, and continue to consume. What you won't do someone else will. And we do it so we don't lose our job, so we don't lose our paycheck, so we won't default on our mortgage, on our car payment, on our school loans. We are, unfortunately, caught in the middle, a string in this puppet show.</p>
         <p>And although our hands may be guided the question remains: 'Is your mind?'</p>
         </div>
         </div>
@@ -75,13 +75,14 @@
             <img id="desk" src="http://images.mattmills.info/empty-desk_v1.jpg">
         </div>     
       </div>
-            <div class="vidwrapper row-fluid">
-                      <div id="rightblock" class="span6 noseeum">
+            <div class="vidwrapper">
+                      
+                      <div id="leftblock" class='span6 noseeum1 '>
                       </div>
-                      <div id="leftblock" class='span6 noseeum'>
+                      <div id="rightblock" class="span6 noseeum2 ">
                       </div>
 
-                      <div class="screen" id="screen-1" data-video="vid/1.webmhd.webm">
+                      <div class="screen" id="screen-1" data-video="vid/1.webmhd.webm" preload>
                         <img src="img/1.webmhd.png" class="big-image" />
                       </div>
                   
@@ -213,32 +214,63 @@
                 </div>-->
 
                             
-
-           
+        
         <script>
+         
+$(function() {
+            var isPlaying = false
+            var screenIndex = 1
+            var BV = new $.BigVideo();
+            myPlayer = BV.getPlayer()
+
+
             $( "#desk" ).click(function() {
-            $( ".vidwrapper" ).show( "fold", 1000 );
+                $( ".vidwrapper" ).show( "fold", 1000 );
+
 
             });
-        </script>
-        <script>
+        
             $( ".big-image" ).click(function() {
-            $( ".vidwrapper" ).hide( "fold", 1000 );
+                //$( ".vidwrapper" ).hide( "fold", 1000 );
           
             });
-        </script> 
-        <script>
+        
             $( "#rightblock" ).click(function() {
-                //$( $('#screen-'+screenIndex)).fadeOut();
-                showVideo();
-                //next();
 
-            });
-        </script>       
+                        BV.init();
+            //$('#screen-'+screenIndex).find('.big-image').transit({'opacity':0},3100);
+              //BV.show($('#screen-'+screenIndex).attr('data-video'),{ambient:true});
+            $('#vidwrapper').css({'translate':['-4.5455%']});
+            $('#big-video-vid').css({'opacity':100},2000);
+            var myFunc = function(){
+                var myPlayer = this;
+                // Do something when the event is fired
+                              BV.show($('#screen-'+screenIndex).attr('data-video'),{ambient:true});
+
+            };
+            myPlayer.addEvent("loadedalldata", myFunc);
+                        screenIndex++;
+
+          });
+          //if (BV.getPlayer().)
+    var Paws = function(){
+      var myPlayer = this;
+      // Do something when the event is fired
+      myPlayer.pause();
+                  $('#vidwrapper').css({'translate':['-4.5455%']});
+
+    };
+    myPlayer.addEvent("ended", Paws);
 
 
 
-      <script>
+});
+        </script>
+           
+
+
+
+      <!--<script>
         $(function() {
 
             // Use Modernizr to detect for touch devices, 
@@ -358,7 +390,7 @@
           }
 
         });
-        </script>
+        </script>-->
 
         
 
