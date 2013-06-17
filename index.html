@@ -3,45 +3,52 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if IE]><link href='http://fonts.googleapis.com/css?family=Arvo:400italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Arvo:700' rel='stylesheet' type='text/css'><![endif]-->
     <head>
         <meta charset="utf-8">
-        <!--<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+        <link rel="stylesheet" href="css/bootstrap-lightbox.min.css">
+        <!-- Magnific Popup core CSS file -->
+        <!--<link rel="stylesheet" href="css/magnific-popup.css"> -->
+        <!--<link rel="stylesheet" href="css/bigvideo.css">-->
+        <link href="css/video-js.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css">
+                <link href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet">
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.js"><\/script>')</script>
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js" type="text/javascript"></script>
+        <script src="js/video.js" type="text/javascript"></script>
+        <script src="js/jquery-ui.js" type="text/javascript"></script>
+        <script src="js/fill_resize.js" type="text/javascript"></script>
+        <script>
+            $(document).ready(function () {
+                $(".ediblewrapper").hide();
+                $(".controls").hide();
+                $(".firstwords").hide();
+                $(".closebutton").hide();                
+
+            });
+        </script>
+        
         <style>
             body {
                 padding:0px;
             }
         </style>
-
-
-        <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
-        <link rel="stylesheet" href="css/bootstrap-lightbox.min.css">
-        <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-        <link href="css/video-js.css" rel="stylesheet">
-        <script src="js/video.js"></script>
-        <link rel="stylesheet" href="css/bigvideo.css">
-
-        <style>
-            .vidwrapper {
-            display: none;
-            
-            }
-        </style>
+      
+    
     </head>
     <body>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.js"><\/script>')</script>
-                <script src="js/jquery-ui-1.10.3.custom.js"></script>  
-
-        <script src="js/jquery.imagesloaded.min.js"></script>
-        <script src="js/jquery.scrollTo.js"></script>
-        <script src="js/bigvideo.js"></script>
-        <script src="js/jquery.transit.js"></script>
+        
         
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
@@ -49,363 +56,526 @@
 
         <!-- This code is taken from http://twitter.github.com/bootstrap/examples/hero.html -->
         
-        <div class="container-fluid nopad">
-        <div class="row">
-            <img src="http://images.mattmills.info/ceiling.jpg">
+        <div class="container-fluid nopad ">
+        <div class="row-fluid">
+          <div class="span12">
+            <img id="ceiling" src="img/tiles.jpg">
+          </div>
         </div>
-        <!--<div class="row-fluid navbar">
-        
-                    <div class="bigletters span12 pull-right muted brand">
-                        <a href="#">mattmills.info</a>
-                    </div>
-        </div>-->
-        <div class="row-fluid wall">
-        <div class="span12 pagetitle">
-        <h1>BUSY WORK</h1>
-        </div>
-        <div class="span12 flush text-left clearfix">
-        <p>This is a working man's world.</p> 
-        <p>Most of us show up day after day, do our work, and go home. We push our pencil around, answering someone else's questions. We peck at our keyboard, balancing someone else's budget sheet. We're in here but the World's outside, buying and selling, dancing the dance of consumerism: puppets on the stage of capitalism. We feel separated and yet inexorably tied to both the puppets and the hands above.</p>
-        <p>And because of this, your inflexible role in this system hangs over you like a deep grey rain cloud waiting to release. Because the sickening truth is you are person who is not a person, you're a cog in the machine; you follow instructions, policy, protocol, and directions, so that the world outside can buy this, and use that, and continue to consume. What you won't do someone else will. And we do it so we don't lose our job, so we don't lose our paycheck, so we won't default on our mortgage, on our car payment, on our school loans. We are, unfortunately, caught in the middle, a string in this puppet show.</p>
-        <p>And although our hands may be guided the question remains: 'Is your mind?'</p>
-        </div>
-        </div>
-        
-        <div class="span12 office nomargin">
-            <img id="desk" src="http://images.mattmills.info/empty-desk_v1.jpg">
-        </div>     
-      </div>
-            <div class="vidwrapper">
-                      
-                      <div id="leftblock" class='span6 noseeum1 '>
-                      </div>
-                      <div id="rightblock" class="span6 noseeum2 ">
-                      </div>
-
-                      <div class="screen" id="screen-1" data-video="vid/1.webmhd.webm" preload>
-                        <img src="img/1.webmhd.png" class="big-image" />
-                      </div>
-                  
-
-                      <div class="screen" id="screen-2" data-video="vid/2.webmhd.webm">
-                        <img src="img/2.webmhd.png" class="big-image" />
-                      </div>
-                
-                      <div class="screen" id="screen-3" data-video="vid/3.webmhd.webm">
-                        <img src="img/3.webmhd.png" class="big-image" />
-                      </div>
-                 
-                      <div class="screen" id="screen-4" data-video="vid/4.webmhd.webm">
-                        <img src="img/4.webmhd.png" class="big-image" />
-                      </div>
-                
-                      <div class="screen" id="screen-5" data-video="vid/5.webmhd.webm">
-                        <img src="img/5.webmhd.png" class="big-image" />
-                      </div>
-                 
-                      <div class="screen" id="screen-6" data-video="vid/6.webmhd.webm">
-                        <img src="img/6.webmhd.png" class="big-image" />
-                      </div>
-                
-                      <div class="screen" id="screen-7" data-video="vid/7.webmhd.webm">
-                        <img src="img/7.webmhd.png" class="big-image" />
-                      </div>
-               
-                      <div class="screen" id="screen-8" data-video="vid/8.webmhd.webm">
-                        <img src="img/8.webmhd.png" class="big-image" />
-                      </div>
-                
-                      <div class="screen" id="screen-9" data-video="vid/9.webmhd.webm">
-                        <img src="img/9.webmhd.png" class="big-image" />
-                      </div>
-                
-                      <div class="screen" id="screen-10" data-video="vid/10.webmhd.webm">
-                        <img src="img/10.webmhd.png" class="big-image" />
-                      </div>
-                 
-                      <div class="screen" id="screen-11" data-video="vid/11.webmhd.webm">
-                        <img src="img/11.webmhd.png" class="big-image" />
-                      </div>  
-                 
-                      <div class="screen" id="screen-12" data-video="vid/12.webmhd.webm">
-                        <img src="img/12.webmhd.png" class="big-image" />
-                      </div>
-               
-                      <div class="screen" id="screen-13" data-video="vid/13.webmhd.webm">
-                        <img src="img/13.webmhd.png" class="big-image" />
-                      </div>
-
-                      <div class="screen" id="screen-14" data-video="vid/14.webmhd.webm">
-                        <img src="img/14.webmhd.png" class="big-image" />
-                      </div>
-                  
-                      <div class="screen" id="screen-15" data-video="vid/15.webmhd.webm">
-                        <img src="img/15.webmhd.png" class="big-image" />
-                      </div>
-                
-                      <div class="screen" id="screen-16" data-video="vid/16.webmhd.webm">
-                        <img src="img/16.webmhd.png" class="big-image" />
-                      </div>
-                  
-                      <div class="screen" id="screen-17" data-video="vid/17.webmhd.webm">
-                        <img src="img/17.webmhd.png" class="big-image" />
-                      </div>
-                  
-                      <div class="screen" id="screen-18" data-video="vid/18.webmhd.webm">
-                        <img src="img/18.webmhd.png" class="big-image" />
-                      </div>
-                 
-                      <div class="screen" id="screen-19" data-video="vid/19.webmhd.webm">
-                        <img src="img/19.webmhd.png" class="big-image" />
-                      </div>
-                 
-                      <div class="screen" id="screen-20" data-video="vid/20.webmhd.webm">
-                        <img src="img/20.webmhd.png" class="big-image" />
-                      </div>
-                  
-                      <div class="screen" id="screen-21" data-video="vid/21.webmhd.webm">
-                        <img src="img/21.webmhd.png" class="big-image" />
-                      </div> 
-                  
-                      <div class="screen" id="screen-22" data-video="vid/22.webmhd.webm">
-                        <img src="img/22.webmhd.png" class="big-image" />
-                      </div>
-                
+        <div class="row-fluid">
+            <div class="span12 wall">
+            <div class="span10 offset1 pad text-left">
+                <h1>BUSY WORK</h1>
+            </div>
+      
+            <div class="span9 offset1 pad text-left">
+                <p>
+                  In this place we are fluff: middle-men, not producers but consumers and distributors.  We push the speed that fuels this machine behind us and we judge our success by our ability to sell for more what was made for less and what we didn't make at all. We're middle-men, and we're here in this office surrounded by other offices in a building of offices surrounded by buildings full of offices. We're insulated from anything that might make us think otherwise about these things we're doing every day, day after day, no matter how much the sun is shining or how fast the season is changing or how many people are dying or how little we actually have to show after a day, a week, a year, a lifetime of work.
+                </p>
+                <p> 
+                  And there's an anxiety inside us that feels like what we would have felt when those dark grey heavy rain clouds rolled in fast the other day and flipped all the leaves up on trees and then suddenly <span class="italics">released</span> and the people in the street <span class="italics">ran</span> like wild animals as the streets grew rivers and lakes formed at crosswalks and kids screamed and umbrellas popped open and bent over and cabbies start flying because <span class="italics">"man, this is when you make your money"</span> and we just watched from a window up here on the 16th floor waiting for a meeting to start so we could have someone else tell us what our life was going to be like for the next quarter. So no, we didn't feel that. We were busy.
+                </p>
             </div>
           </div>
-            <nav id="next-btn">
-                  <a href="#" class="next-icon"><img src="fake.jpg"></a>
-            </nav>
-                <!--<a data-toggle="lightbox" href="#tj2"><img src="http://images.mattmills.info/tj2.png"></a>
-                <div id="tj2" class="lightbox hide fade"  tabindex="-1" role="dialog" aria-hidden="true">
-                     <div class='lightbox-header'>
-                          <button type="button" class="close" data-dismiss="lightbox" aria-hidden="true">&times;</button>
-                     </div>
-                     <div class='lightbox-content'>
-                          <img src="http://images.mattmills.info/tape2.jpg">
-                     </div>
-                </div>
-                <a data-toggle="lightbox" href="#tj3"><img src="http://images.mattmills.info/tj3.png"></a>
-                <div id="tj3" class="lightbox hide fade"  tabindex="-1" role="dialog" aria-hidden="true">
-                     <div class='lightbox-header'>
-                          <button type="button" class="close" data-dismiss="lightbox" aria-hidden="true">&times;</button>
-                     </div>
-                     <div class='lightbox-content'>
-                          <img src="http://images.mattmills.info/tape3.jpg">
-                     </div>
-                </div>
-                <a data-toggle="lightbox" href="#tj4"><img src="http://images.mattmills.info/tj4.png"></a>
-                <div id="tj4" class="lightbox hide fade"  tabindex="-1" role="dialog" aria-hidden="true">
-                     <div class='lightbox-header'>
-                          <button type="button" class="close" data-dismiss="lightbox" aria-hidden="true">&times;</button>
-                     </div>
-                     <div class='lightbox-content'>
-                          <img src="http://images.mattmills.info/tape4.jpg">
-                     </div>
-                </div>
-                <a data-toggle="lightbox" href="#tj5"><img src="http://images.mattmills.info/tj5.png"></a>
-                <div id="tj5" class="lightbox hide fade"  tabindex="-1" role="dialog" aria-hidden="true">
-                     <div class='lightbox-header'>
-                          <button type="button" class="close" data-dismiss="lightbox" aria-hidden="true">&times;</button>
-                     </div>
-                     <div class='lightbox-content'>
-                          <img src="fake.jpg">
-                     </div>
-                </div>-->
+        </div>
+        
+        
+        <div class="span12 office nomargin" >
+            <img onclick="firstwords()" id="desk" src="img/empty-desk_72dpi_1500px.jpg">
 
+        </div>     
+      </div>
+      
+
+      <video class="fill ediblewrapper" height="auto" width="100%" id="tag" poster="img/1.webmhd.png" preload="auto">
+          <source src="vid/flipflop_tape1.webmhd.webm" type="video/webm" />
+          <p class="warning">Your browser does not support HTML5 video.</p>
+      </video>
+
+      <div onclick="bigtime()" class="firstwords" >
+              <div class="row-fluid">
+                <span class="span10 offset1 lead"><p>The irony extends to the day-to-day of office life. The tools and materials of business, with a different intent, could be used for creative personal expression. The leftovers and remnants of work for business, could be a balanced composition of textures and materials that are pleasing to the eye.  We don't see them, but they could be there as remnants of this middle-man industry, forgotten creations from those who don't make but could. 
+                </p></span>
+              </div>
+              
+            </div>
+      <div class="container-fluid">
+      <div class="row-fluid controls">
+      
+          <div onclick="hideit()" class="closebutton"><p><span class="bigclose">&#10006;</span></p></div>
+          <div onclick="backwardPlay()" class="backwarddiv    "></div>
+          <div onclick="litterbox()" class="blowupdiv  "></div>
+          <div onclick="forwardPlay()" class="forwarddiv   "></div>
+          
+      </div>
+      </div>
+      <div class="container-fluid nopad">
+        <div id="photocase1" class="lightbox hide fade" tab-index="-1" role="dialog" aria-hidden="true">
+          <div class="lightbox-content">
+            <img id="tj1" src="img/page1.jpg">
+          </div>
+        </div>
+        <div id="photocase2" class="lightbox hide fade" tab-index="-1" role="dialog" aria-hidden="true">
+          <div class="lightbox-content">
+            <img id="tj2" src="img/page2.jpg">
+          </div>
+        </div>
+        <div id="photocase3" class="lightbox hide fade" tab-index="-1" role="dialog" aria-hidden="true">
+          <div class="lightbox-content">
+            <img id="tj3" src="img/page3.jpg">
+          </div>
+        </div>
+        <div id="photocase4" class="lightbox hide fade" tab-index="-1" role="dialog" aria-hidden="true">
+          <div class="lightbox-content">
+            <img id="tj4" src="img/page4.jpg">
+          </div>
+        </div>
+        <div id="photocase5" class="lightbox hide fade" tab-index="-1" role="dialog" aria-hidden="true">
+          <div class="lightbox-content">
+            <img id="tj5" src="img/page5.jpg">
+          </div>
+        </div>
+        <div id="photocase6" class="lightbox hide fade" tab-index="-1" role="dialog" aria-hidden="true">
+          <div class="lightbox-content">
+            <img id="tj6" src="img/page6.jpg">
+          </div>
+        </div>
+        <div id="photocase7" class="lightbox hide fade" tab-index="-1" role="dialog" aria-hidden="true">
+          <div class="lightbox-content">
+            <img id="tj7" src="img/page7.jpg">
+          </div>
+        </div>
+        <div id="photocase8" class="lightbox hide fade" tab-index="-1" role="dialog" aria-hidden="true">
+          <div class="lightbox-content">
+            <img id="tj8" src="img/page8.jpg">
+          </div>
+        </div>
+        <div id="photocase9" class="lightbox hide fade" tab-index="-1" role="dialog" aria-hidden="true">
+          <div class="lightbox-content">
+            <img id="tj9" src="img/page9.jpg">
+          </div>
+        </div>
+</div>
+
+
+
+
+      <script type="text/javascript">
+          function firstwords () {
+            $('.firstwords').show();
+            $('.controls').show();
+
+          }
+          function bigtime () {
+            $('.firstwords').hide();
+            $('.ediblewrapper').show();
+            $('.controls').show();
+            $('.closebutton').show();
+
+          
+          };
+
+          function hideit () {
+            $('.ediblewrapper').hide();
+            $('.controls').hide();
+            $('.closebutton').hide();
+            $('#tag').currentTime = 0;
+          };
+          </script>
+
+
+      <script type="text/javascript">
+          var tag = document.getElementById("tag");
+          var theStopTime = 2.1;
+          //tag.addEventListener('timeupdate',twosecondPause);
+          tag.addEventListener('timeupdate',marker);
+          
+          function litterbox() {
+            if (tag.paused !== false) {
+              time = tag.currentTime;
+              
+               if ((time > 4.5 ) && (time <= 5.8)) {
+                $('#photocase1').lightbox();
+              }
+              else if ((time > 6 ) && (time <= 8.3)) {
+                  $('#photocase2').lightbox();              }
+              else if ((time > 8.3 ) && (time <= 10.65)) {
+                  $('#photocase3').lightbox();              }
+              else if ((time > 10.65 ) && (time <= 13.3)) {
+                  $('#photocase4').lightbox();              }
+              else if ((time > 13.3 ) && (time <= 16.05)) {
+                  $('#photocase5').lightbox();              }
+              else if ((time > 16.05 ) && (time <= 18.8)) {
+                  $('#photocase6').lightbox();              }
+              else if ((time > 18.8 ) && (time <= 21.9)) {
+                  $('#photocase7').lightbox();              }
+              else if ((time > 21.9 ) && (time <= 25.3)) {
+                  $('#photocase8').lightbox();              }
+              else if ((time > 25.3 ) && (time <= 29.3)) {
+                  $('#photocase9').lightbox();              }
+              else if ((time > 29.3 ) && (time <= 33.3)) {
+                  $('#photocase9').lightbox();              }
+              else if ((time > 33.3 ) && (time <= 36.8)) {
+                  $('#photocase8').lightbox();              }
+              else if ((time > 36.8 ) && (time <= 41.3)) {
+                  $('#photocase7').lightbox();              }
+              else if ((time > 41.3 ) && (time <= 45.3)) {
+                  $('#photocase6').lightbox();              }
+              else if ((time > 45.3 ) && (time <= 48.3)) {
+                  $('#photocase5').lightbox();              }
+              else if ((time > 48.3 ) && (time <= 50.3)) {
+                  $('#photocase4').lightbox();              }
+              else if ((time > 50.3 ) && (time <= 56.3)) {
+                  $('#photocase3').lightbox();              }
+              else if ((time > 56.3 ) && (time <= 58.3)) {
+                  $('#photocase2').lightbox();              }
+              else if ((time > 58.3 ) && (time <= 62.8)) {
+                  $('#photocase1').lightbox();              }
+            }
+          };
+
+          function forwardPlay() {
+
+              if (tag.paused !== false) {
+                time = tag.currentTime;
+                //back to beginning if at end
+                if (time >= 66) {
+                  tag.currentTime = 0.1;
+                  theStopTime = 2.1;
+                }
+                else if (time >= 63.1) {
+                  tag.currentTime = 2.1;
+                  theStopTime = 5.5;
+                }
+                //open to first page
+                else if (time >= 58.3) {
+                  tag.currentTime = 5.5;
+                  theStopTime = 8;
+                }
+                //open to 2nd page
+                else if (time >= 56.3) {
+                  tag.currentTime = 8;
+                  theStopTime = 10.35;
+                }
+                //open to 3rd page
+                else if (time >= 53.3) {
+                  tag.currentTime = 10.4;
+                  theStopTime = 13;
+                }
+                //open to 4th page
+                else if (time >= 50.3) {
+                  tag.currentTime = 13;
+                  theStopTime = 15.75;
+                }
+                //open to 5th page
+                else if (time >= 48.3) {
+                  tag.currentTime = 15.75;
+                  theStopTime = 18.5;
+                }
+                //to 6th page
+                else if (time >= 45.3) {
+                  tag.currentTime = 18.5;
+                  theStopTime = 21.6;
+                }
+                //to 7th page
+                else if (time >= 41.3) {
+                  tag.currentTime = 21.6;
+                  theStopTime = 25.3;
+                }
+                //to 8th page
+                else if (time >= 36.8) {
+                  tag.currentTime = 25;
+                  theStopTime = 29;
+                }
+                else if (time >= 33.3) {
+                  tag.currentTime = 29;
+                  theStopTime = 33;
+                }
+                //flip last page
+
+                else if (time < 1.85) {
+              theStopTime = 2.1;
+            }
+            //2nd pause
+            else if (time < 5.25) {
+              theStopTime = 5.5;
+            }
+            //3rd pause
+            else if (time < 7.75) {
+              theStopTime = 8.0;
+            }
+            //4th pause
+            else if (time < 10.1) {
+              theStopTime = 10.35;
+            }
+            //5th pause
+            else if (time < 12.75) {
+              theStopTime = 13;
+            }
+            //6th pause
+            else if (time < 15.5) {
+              theStopTime = 15.75;
+            }
+            //7th pause
+            else if (time < 18.25) {
+              theStopTime = 18.5;
+            }
+            //8th pause
+            else if (time < 21.35) {
+              theStopTime = 21.6;
+            }
+            //9th pause
+            else if (time < 24.75) {
+              theStopTime = 25;
+            }
+            //10th pause
+            else if (time < 28.75) {
+              theStopTime = 29;
+            }
+            //11th pause
+            else if (time < 32.75) {
+              theStopTime = 33;
+            }
+            
+
+
+                tag.play();
+
+              }
+          };
+
+          function backwardPlay() {
+            if (tag.paused !== false) {
+              time = tag.currentTime;
+                //back to beginning
+                 if (time <= 2.4) {
+                  tag.currentTime = 64;
+                  theStopTime = 67;
+                }
+                else if (time <= 5.8) {
+                  tag.currentTime = 61.5;
+                  theStopTime = 64;
+                }
+                //to 1st page
+                else if (time <= 8.3) {
+                  tag.currentTime = 58;
+                  theStopTime = 61.5;
+                }
+                //to 2nd page
+                else if (time <= 10.55) {
+                  tag.currentTime = 56;
+                  theStopTime = 58;
+                }
+                //to 3rd page
+                else if (time <= 13.3) {
+                  tag.currentTime = 53.25;
+                  theStopTime = 56;
+                }
+                //to 4th page
+                else if (time <= 16.05) {
+                  tag.currentTime = 50.5;
+                  theStopTime = 53.25;
+                }
+                //to 5th page
+                else if (time <= 18.5) {
+                  tag.currentTime = 48;
+                  theStopTime = 50.5;
+                }
+                //to 6th page
+                else if (time <= 21.9) {
+                  tag.currentTime = 45;
+                  theStopTime = 48;
+                }
+                //to 7th page
+                else if (time <= 25.3) {
+                  tag.currentTime = 41;
+                  theStopTime = 45;
+                }
+                //to 8th page
+                else if (time <= 29.3) {
+                  tag.currentTime = 36.5;
+                  theStopTime = 41;
+                }
+                //to 9th page
+                else if (time <= 33.3) {
+                  tag.currentTime = 33;
+                  theStopTime = 36.5;
+                }
+               
+            else if (time < 40.75) {
+              theStopTime = 41;
+            }
+            //14th pause
+            else if (time < 44.75) {
+              theStopTime = 45;
+            }
+            //15th pause
+            else if (time < 47.75) {
+              theStopTime = 48;
+            }
+            //16th pause
+            else if (time < 50.25) {
+              theStopTime = 50.5;
+            }
+            //17th pause
+            else if (time < 53.) {
+              theStopTime = 53.25;
+            }
+            //18th pause
+            else if (time < 55.75) {
+              theStopTime = 56;
+            }
+            //19th pause
+            else if (time < 57.75) {
+              theStopTime = 58;
+            }
+            //20th pause
+            else if (time < 61.25) {
+              theStopTime = 61.5;
+            }
+            //21st pause
+            else if (time < 63.75) {
+              theStopTime = 64;
+            }
+            
+
+                
+                tag.play();
+            }
+          };
+
+           function marker() {
+             time = tag.currentTime;
+            //1st pause
+            if (time > theStopTime) {
+              tag.pause();
+            }
+            // if (time < 1.85) {
+            //   theStopTime = 2.1;
+            // }
+            // //2nd pause
+            // else if (time < 5.25) {
+            //   theStopTime = 5.5;
+            // }
+            // //3rd pause
+            // else if (time < 7.75) {
+            //   theStopTime = 8.0;
+            // }
+            // //4th pause
+            // else if (time < 10.1) {
+            //   theStopTime = 10.35;
+            // }
+            // //5th pause
+            // else if (time < 12.75) {
+            //   theStopTime = 13;
+            // }
+            // //6th pause
+            // else if (time < 15.5) {
+            //   theStopTime = 15.75;
+            // }
+            // //7th pause
+            // else if (time < 18.25) {
+            //   theStopTime = 18.5;
+            // }
+            // //8th pause
+            // else if (time < 21.35) {
+            //   theStopTime = 21.6;
+            // }
+            // //9th pause
+            // else if (time < 24.75) {
+            //   theStopTime = 25;
+            // }
+            // //10th pause
+            // else if (time < 28.75) {
+            //   theStopTime = 29;
+            // }
+            // //11th pause
+            // else if (time < 32.75) {
+            //   theStopTime = 33;
+            // }
+            // //12th pause
+            // else if (time < 36.25) {
+            //   theStopTime = 36.5;
+            // }
+            // //13th pause
+            // else if (time < 40.75) {
+            //   theStopTime = 41;
+            // }
+            // //14th pause
+            // else if (time < 44.75) {
+            //   theStopTime = 45;
+            // }
+            // //15th pause
+            // else if (time < 47.75) {
+            //   theStopTime = 48;
+            // }
+            // //16th pause
+            // else if (time < 50.25) {
+            //   theStopTime = 50.5;
+            // }
+            // //17th pause
+            // else if (time < 53.) {
+            //   theStopTime = 53.25;
+            // }
+            // //18th pause
+            // else if (time < 55.75) {
+            //   theStopTime = 56;
+            // }
+            // //19th pause
+            // else if (time < 57.75) {
+            //   theStopTime = 58;
+            // }
+            // //20th pause
+            // else if (time < 61.25) {
+            //   theStopTime = 61.5;
+            // }
+            // //21st pause
+            // else if (time < 63.75) {
+            //   theStopTime = 64;
+            // }
+            // //22nd pause
+            // else if (time < 66.75) {
+            //   theStopTime = 67;
+            // }
+
+          };
+
+          function twosecondPause () {
+              //if ((tag.currentTime > (theStopTime)) && (tag.currentTime < (theStopTime + 0.3))) {
+                //tag.pause();
+                
+              //};
+              if (tag.currentTime > (theStopTime))  {
+                tag.pause();
+
+              };
+            };
+      </script>   
                             
         
-        <script>
-         
-$(function() {
-            var isPlaying = false
-            var screenIndex = 1
-            var BV = new $.BigVideo();
-            myPlayer = BV.getPlayer()
 
 
-            $( "#desk" ).click(function() {
-                $( ".vidwrapper" ).show( "fold", 1000 );
+        <footer>
 
-
-            });
-        
-            $( ".big-image" ).click(function() {
-                //$( ".vidwrapper" ).hide( "fold", 1000 );
-          
-            });
-        
-            $( "#rightblock" ).click(function() {
-
-                        BV.init();
-            //$('#screen-'+screenIndex).find('.big-image').transit({'opacity':0},3100);
-              //BV.show($('#screen-'+screenIndex).attr('data-video'),{ambient:true});
-            $('#vidwrapper').css({'translate':['-4.5455%']});
-            $('#big-video-vid').css({'opacity':100},2000);
-            var myFunc = function(){
-                var myPlayer = this;
-                // Do something when the event is fired
-                              BV.show($('#screen-'+screenIndex).attr('data-video'),{ambient:true});
-
-            };
-            myPlayer.addEvent("loadedalldata", myFunc);
-                        screenIndex++;
-
-          });
-          //if (BV.getPlayer().)
-    var Paws = function(){
-      var myPlayer = this;
-      // Do something when the event is fired
-      myPlayer.pause();
-                  $('#vidwrapper').css({'translate':['-4.5455%']});
-
-    };
-    myPlayer.addEvent("ended", Paws);
-
-
-
-});
-        </script>
-           
-
-
-
-      <!--<script>
-        $(function() {
-
-            // Use Modernizr to detect for touch devices, 
-            // which don't support autoplay and may have less bandwidth, 
-            // so just give them the poster images instead
-
-          var screenIndex = 1,
-              numScreens = $('.screen').length,
-              isTransitioning = false,
-              transitionDur = 1000,
-              BV,
-              videoPlayer,
-              isTouch = Modernizr.touch;
-              $bigImage = $('.big-image'),
-              $window = $(window);
-
-          if (!isTouch) {
-              // initialize BigVideo
-              BV = new $.BigVideo('forceAutoplay:isTouch');
-              BV.init();
-              showVideo();
-     
-              BV.getPlayer().addEvent('loadeddata', function() {
-                  onVideoLoaded();
-              }
-              );
- 
-              // adjust image positioning so it lines up with video
-              $bigImage
-                  .css('position','relative')
-                  .imagesLoaded(adjustImagePositioning);
-              // and on window resize
-              $(window).on('resize', adjustImagePositioning);
-          }
-
-          // Next button click goes to next div
-          $('#next-btn').on('click', function(e) {
-              e.preventDefault();
-              if (!isTransitioning){
-                next();
-              
-              }
-          });
-
-
-          function showVideo() {
-              BV.show($('#screen-'+screenIndex).attr('data-video'));
-          }
-
-          function next() {
-              isTransitioning = true;
-               
-              // update video index, reset image opacity if starting over
-              if (screenIndex === numScreens) {
-                  $bigImage.css('opacity',1);
-                  screenIndex = 1;
-              } else {
-                  screenIndex++;
-              }
-               
-              if (!isTouch) {
-                  $('#vidwrapper').transit({'left':'-100%'},transitionDur)
-              }
-                   
-              $('.vidwrapper').transit(
-                  {'left':'-'+(100*(screenIndex-1))+'%'},
-                  transitionDur,
-                  onTransitionComplete);
-              onTransitionComplete();
-          }
-
-          function onVideoLoaded() {
-              $('#screen-'+screenIndex).find('.big-image').transit({'opacity':0},500)
-          }
-
-          function onTransitionComplete() {
-              isTransitioning = false;
-              if (!isTouch) {
-                  $('#big-video-wrap').css('left',0);
-                  showVideo();
-              }
-          }
-
-          function adjustImagePositioning() {
-              $bigImage.each(function(){
-                  var $img = $(this),
-                      img = new Image();
-           
-                  img.src = $img.attr('src');
-           
-                  var windowWidth = $window.width(),
-                      windowHeight = $window.height(),
-                      r_w = windowHeight / windowWidth,
-                      i_w = img.width,
-                      i_h = img.height,
-                      r_i = i_h / i_w,
-                      new_w, new_h, new_left, new_top;
-           
-                  if( r_w > r_i ) {
-                      new_h   = windowHeight;
-                      new_w   = windowHeight / r_i;
-                  }
-                  else {
-                      new_h   = windowWidth * r_i;
-                      new_w   = windowWidth;
-                  }
-           
-                  $img.css({
-                      width   : new_w,
-                      height  : new_h,
-                      left    : ( windowWidth - new_w ) / 2,
-                      top     : ( windowHeight - new_h ) / 2
-                  })
-           
-              });
- 
-          }
-
-        });
-        </script>-->
-
-        
 
         <script src="js/vendor/bootstrap.min.js"></script>
-        
-
-
         <script src="js/main.js"></script>
         <script src="js/vendor/bootstrap-lightbox.js"></script>
+        
+                  
+
+        <!--<script src="js/jquery.imagesloaded.min.js"></script>
+        <script src="js/jquery.scrollTo.js"></script>
+        <script src="js/bigvideo.js"></script>
+        <script src="js/jquery.transit.js"></script>
+        <script src="js/jquery.magnific-popup.js"></script>-->
+
         <!--<script>
             var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
             (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
             g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
             s.parentNode.insertBefore(g,s)}(document,'script'));
         </script>-->
-        
+        </footer>
     </body>
 </html>
