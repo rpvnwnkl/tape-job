@@ -21,6 +21,7 @@ p {
     font-size: 1em;
     font-weight: 400;
     margin: 0px;
+    padding-top: 1em;
 }
 .italics {
   font-weight: 400;
