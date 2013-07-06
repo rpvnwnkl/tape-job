@@ -43,6 +43,17 @@ h1 {
 
 }
 
+#busywork h1 { 
+  font-family: 'Alfa Slab One',sans-serif; 
+  font-size: 1.3em;
+  font-weight: normal;
+  padding-bottom: 0.25em;
+    padding-top: 0.25em;
+    line-height: 1.25em;
+    text-transform: uppercase;
+    margin: 0px;
+
+}
 h2 { font-size: 3.0em; }
 h3 { font-size: 1.5em; }
 
@@ -69,6 +80,7 @@ margin-right:0px;
     width:100%;
     height:auto;
     border: none;
+    position: relative;
 
 }
 
@@ -103,6 +115,26 @@ margin-right:0px;
   width: 100%
   ;
 }
+
+/*.buttons {
+  position:absolute;
+  height:100%;
+}
+.buttons img {
+  position:relative;
+  bottom:0px;
+  width:50%;
+  height:auto;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 1s linear;
+  
+}
+.buttons img:hover {
+  opacity: .75;
+  filter: alpha(opacity=75);
+  -webkit-transition: opacity 1s linear;
+}*/
 
 .closebutton {
   position:absolute;
@@ -208,3 +240,20 @@ opacity:50%;
 .lightbox-content img {
   box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
 }
+
+#floatcenter {
+  position:absolute;
+top:65%;
+margin: 0 auto;
+width: 100%;
+}
+
+#floatcenter p{
+  color: rgb(156,255,206);
+  font-size:.8em;
+  line-height:1em;
+}
+.ediblewrapper, .controls, .firstwords, .closebutton {
+  display: none;
+}
+
