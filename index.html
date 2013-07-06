@@ -107,10 +107,16 @@
       <div class="container-fluid">
       <div class="row-fluid controls">
       
-          <div onclick="hideit()" class="closebutton"><p><span class="bigclose">&#10006;</span></p></div>
-          <div onclick="backwardPlay()" class="backwarddiv    "><!-- <div class="buttons"><img src="img/leftbutton.png" alt="back?"></div> --></div>
-          <div onclick="litterbox()" class="blowupdiv  "><!-- <div class="buttons"><img src="img/openbutton.png" alt="look closer?"></div> --></div>
-          <div onclick="forwardPlay()" class="forwarddiv   "><!-- <div class="buttons"><img src="img/rightbutton.png" alt="next page?"></div> --></div>
+              <div onclick="hideit()" class="closebutton"><p><span class="bigclose">&#10006;</span></p></div>
+          <a href="javascript:backwardPlay()">
+              <div onclick="backwardPlay()" class="backwarddiv    "><!-- <div class="buttons"><img src="img/leftbutton.png" alt="back?"></div> --></div>
+            </a>
+          <a href="javascript:litterbox()">
+              <div onclick="litterbox()" class="blowupdiv  "><!-- <div class="buttons"><img src="img/openbutton.png" alt="look closer?"></div> --></div>
+            </a>
+          <a href="javascript:forwardPlay()">
+              <div onclick="forwardPlay()" class="forwarddiv   "><!-- <div class="buttons"><img src="img/rightbutton.png" alt="next page?"></div> --></div>
+            </a>
           
       </div>
       </div>
