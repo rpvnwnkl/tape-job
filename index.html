@@ -358,7 +358,7 @@
           };
 
           function backwardPlay() {
-            if (tag.paused !== false) {
+            if (tag.paused !== false && !tag.ended) {
               time = tag.currentTime;
                 //back to beginning
                  if (time <= 2.4) {
@@ -449,6 +449,10 @@
                 //21st pause
                 else if (time < 63.75) {
                   theStopTime = 64;
+                }
+                //finish the existing closing segment without replaying at the end
+                else if (time < 66.75) {
+                  theStopTime = 67;
                 }
             
 
