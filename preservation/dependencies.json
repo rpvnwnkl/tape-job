@@ -10,5 +10,101 @@
     "url": "https://raw.githubusercontent.com/davatron5000/FitText.js/07374d7ade72e7c340a267c6285f96be57435792/README.md",
     "sha256": "737de53ab0ce0b143338b94312c1ecd01c3ca6846f29ffaa9efef994fd5669aa",
     "revision": "07374d7ade72e7c340a267c6285f96be57435792"
+  },
+  {
+    "path": "css/vendor/jquery-ui-1.10.3/smoothness/jquery-ui.css",
+    "url": "https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css",
+    "sha256": "9c286c1a80773a8c752ffc323aec348776f86ab242a4e58636b87f376e0853b1",
+    "version": "1.10.3"
+  },
+  {
+    "path": "css/vendor/jquery-ui-1.10.3/smoothness/images/animated-overlay.gif",
+    "url": "https://code.jquery.com/ui/1.10.3/themes/smoothness/images/animated-overlay.gif",
+    "sha256": "c7bcc76fb23c0430b36ec448eb79f8bc34129dae95da10f3c14ed0eacdf2f1b9",
+    "version": "1.10.3"
+  },
+  {
+    "path": "css/vendor/jquery-ui-1.10.3/smoothness/images/ui-bg_flat_0_aaaaaa_40x100.png",
+    "url": "https://code.jquery.com/ui/1.10.3/themes/smoothness/images/ui-bg_flat_0_aaaaaa_40x100.png",
+    "sha256": "994150acea68c40bff5463df324de8f6e82df77590889585afdd621b57c38658",
+    "version": "1.10.3"
+  },
+  {
+    "path": "css/vendor/jquery-ui-1.10.3/smoothness/images/ui-bg_flat_75_ffffff_40x100.png",
+    "url": "https://code.jquery.com/ui/1.10.3/themes/smoothness/images/ui-bg_flat_75_ffffff_40x100.png",
+    "sha256": "6d5dba68ad6a4387aec524a5a83e8c8c3c0b6328ef2aa64a1ed3a4a0f5099685",
+    "version": "1.10.3"
+  },
+  {
+    "path": "css/vendor/jquery-ui-1.10.3/smoothness/images/ui-bg_glass_55_fbf9ee_1x400.png",
+    "url": "https://code.jquery.com/ui/1.10.3/themes/smoothness/images/ui-bg_glass_55_fbf9ee_1x400.png",
+    "sha256": "457f227fbae21853ea95ef77cb80f00e0970b39b8aba763bbe9d15335ece5f6c",
+    "version": "1.10.3"
+  },
+  {
+    "path": "css/vendor/jquery-ui-1.10.3/smoothness/images/ui-bg_glass_65_ffffff_1x400.png",
+    "url": "https://code.jquery.com/ui/1.10.3/themes/smoothness/images/ui-bg_glass_65_ffffff_1x400.png",
+    "sha256": "87f56a15a6eddf43cb55735337b8d618ad10bc3f497c8f9a868275447e368b22",
+    "version": "1.10.3"
+  },
+  {
+    "path": "css/vendor/jquery-ui-1.10.3/smoothness/images/ui-bg_glass_75_dadada_1x400.png",
+    "url": "https://code.jquery.com/ui/1.10.3/themes/smoothness/images/ui-bg_glass_75_dadada_1x400.png",
+    "sha256": "0cba29c042042239d0df5abf4000b91dd2e265dd91098b11589e4a9860aea44c",
+    "version": "1.10.3"
+  },
+  {
+    "path": "css/vendor/jquery-ui-1.10.3/smoothness/images/ui-bg_glass_75_e6e6e6_1x400.png",
+    "url": "https://code.jquery.com/ui/1.10.3/themes/smoothness/images/ui-bg_glass_75_e6e6e6_1x400.png",
+    "sha256": "a794393ca50f60e6741df838b6f4d2a88a51656b4c8a893ff0645d34df784fd8",
+    "version": "1.10.3"
+  },
+  {
+    "path": "css/vendor/jquery-ui-1.10.3/smoothness/images/ui-bg_glass_95_fef1ec_1x400.png",
+    "url": "https://code.jquery.com/ui/1.10.3/themes/smoothness/images/ui-bg_glass_95_fef1ec_1x400.png",
+    "sha256": "f47131f0eec619ae3251b476987afbd4cfcdaca819e512469edc1a34645e88b8",
+    "version": "1.10.3"
+  },
+  {
+    "path": "css/vendor/jquery-ui-1.10.3/smoothness/images/ui-bg_highlight-soft_75_cccccc_1x100.png",
+    "url": "https://code.jquery.com/ui/1.10.3/themes/smoothness/images/ui-bg_highlight-soft_75_cccccc_1x100.png",
+    "sha256": "d509846d992f610dd984d06e986024a29f86c9d5eaf8f6fc95925a0ac807b011",
+    "version": "1.10.3"
+  },
+  {
+    "path": "css/vendor/jquery-ui-1.10.3/smoothness/images/ui-icons_222222_256x240.png",
+    "url": "https://code.jquery.com/ui/1.10.3/themes/smoothness/images/ui-icons_222222_256x240.png",
+    "sha256": "b730d31f147e74f7bf095757acf467af620432ad564a65caae9e18b736b0ec25",
+    "version": "1.10.3"
+  },
+  {
+    "path": "css/vendor/jquery-ui-1.10.3/smoothness/images/ui-icons_2e83ff_256x240.png",
+    "url": "https://code.jquery.com/ui/1.10.3/themes/smoothness/images/ui-icons_2e83ff_256x240.png",
+    "sha256": "48d83e831236cf5dc18497aca4cb78b7c795d1908e6706e805620da64c6d4e4e",
+    "version": "1.10.3"
+  },
+  {
+    "path": "css/vendor/jquery-ui-1.10.3/smoothness/images/ui-icons_454545_256x240.png",
+    "url": "https://code.jquery.com/ui/1.10.3/themes/smoothness/images/ui-icons_454545_256x240.png",
+    "sha256": "ddd3afd34b6bc9fd4cf4db90d9cbca1ad3e93d0bd8e178bc48bb57d861213096",
+    "version": "1.10.3"
+  },
+  {
+    "path": "css/vendor/jquery-ui-1.10.3/smoothness/images/ui-icons_888888_256x240.png",
+    "url": "https://code.jquery.com/ui/1.10.3/themes/smoothness/images/ui-icons_888888_256x240.png",
+    "sha256": "1b4c4413f9259abf00e3785b163d1e2878b5ab26d4a10c9ae4f977422682a426",
+    "version": "1.10.3"
+  },
+  {
+    "path": "css/vendor/jquery-ui-1.10.3/smoothness/images/ui-icons_cd0a0a_256x240.png",
+    "url": "https://code.jquery.com/ui/1.10.3/themes/smoothness/images/ui-icons_cd0a0a_256x240.png",
+    "sha256": "47055d523f47e2fa580f8bb9433e590dea2f23243ce081a9ffb91b1bbb468751",
+    "version": "1.10.3"
+  },
+  {
+    "path": "css/vendor/jquery-ui-1.10.3/MIT-LICENSE.txt",
+    "url": "https://raw.githubusercontent.com/jquery/jquery-ui/1.10.3/MIT-LICENSE.txt",
+    "sha256": "ba1d100e74583b4a818e58acd7e435473c7ee2ed009cf069dde811d7da914167",
+    "version": "1.10.3"
   }
 ]
