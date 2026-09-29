@@ -23,7 +23,6 @@
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js" type="text/javascript"></script>
         <script src="js/video.js" type="text/javascript"></script>
         <script src="js/jquery-ui.js" type="text/javascript"></script>
-        <script src="js/fill_resize.js" type="text/javascript"></script>
         <script src="js/FitText.js/jquery.fittext.js" type="text/javascript"></script>
 
         <script>
@@ -78,7 +77,7 @@
         
         
         <div class="span12 office nomargin text-center" >
-            <img onclick="firstwords()" id="desk" src="img/empty-desk_72dpi_1500px.jpg">
+            <img onclick="deskClick()" id="desk" src="img/empty-desk_72dpi_1500px.jpg">
             <a href="javascript:firstwords()">
               <div id="floatcenter">
                 <p>Are you working?</p>
@@ -89,7 +88,7 @@
       </div>
       
       
-      <video class="fill ediblewrapper" height="auto" width="100%" id="tag" poster="img/1.webmhd.png" preload="auto">
+      <video class="fill ediblewrapper" id="tag" preload="auto">
           <source src="vid/flipflop_tape1.webmhd.webm" type="video/webm" />
           <p class="warning">Your browser does not support HTML5 video.</p>
       </video>
@@ -172,27 +171,59 @@
               $('#busywork').fitText(1.2);
               $('#floatcenter').fitText(1.5);
 
-          function firstwords () {
-            $('.firstwords').show();
-            $('.controls').show();
+          var introComplete = false;
 
+          function lockExperience() {
+            document.documentElement.classList.add('experience-active');
           }
+
+          function unlockExperience() {
+            document.documentElement.classList.remove('experience-active');
+          }
+
+          function returnToDesk() {
+            unlockExperience();
+            document.getElementById('desk').scrollIntoView({
+              behavior: 'auto',
+              block: 'center'
+            });
+          }
+
+          function firstwords () {
+            if (introComplete) {
+              return;
+            }
+
+            lockExperience();
+            $('.firstwords').show();
+            $('.controls').hide();
+          }
+
           function bigtime () {
+            introComplete = true;
             $('.firstwords').hide();
-            $('.ediblewrapper').show();
+            $('.ediblewrapper').addClass('video-active');
             $('.controls').show();
             $('.closebutton').show();
+          }
 
-          
-          };
+          function deskClick() {
+            if (!introComplete) {
+              return;
+            }
+
+            lockExperience();
+            $('.ediblewrapper').addClass('video-active');
+            $('.controls').show();
+            $('.closebutton').show();
+          }
 
           function hideit () {
-            $('.ediblewrapper').hide();
+            $('.ediblewrapper').removeClass('video-active');
             $('.controls').hide();
             $('.closebutton').hide();
             tag.pause();
-            tag.currentTime = 0;
-            theStopTime = 2.1;
+            returnToDesk();
           };
           </script>
 

@@ -59,7 +59,9 @@ h3 { font-size: 1.5em; }
 
 .wall {
   background-image: url('../img/wall.jpg');
-  background-size: cover;
+  background-size: 100% 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .nopad{
@@ -73,6 +75,12 @@ padding-right:0px;
 .nomargin{
 margin-left:0px;
 margin-right:0px;
+}
+
+#ceiling {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .office{
@@ -95,16 +103,18 @@ margin-right:0px;
   position:fixed;
   top:0;
   background-color: #cccccc;
-  background-size: cover;
+  background-size: 100% auto;
+  background-position: center bottom;
+  background-repeat: no-repeat;
  }
 #tag {
-
- vertical-align: middle;
- z-index:105;
- float:left;
-
-
-
+  width: 100vw;
+  height: 100vh;
+  object-fit: fill;
+  object-position: center center;
+  vertical-align: middle;
+  z-index:105;
+  float:left;
 }
 .controls {
   z-index:200;
@@ -197,6 +207,8 @@ opacity:50%;
 
 }
 .firstwords {
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
   position:fixed;
   top:0;
   height:100%;
@@ -242,17 +254,43 @@ opacity:50%;
 
 #floatcenter {
   position:absolute;
-top:65%;
-margin: 0 auto;
-width: 100%;
+  top:8.75%;
+  margin: 0 auto;
+  width: 100%;
 }
 
 #floatcenter p{
   color: rgb(156,255,206);
+  text-shadow:
+    0 0 3px rgba(255, 248, 231, 0.95),
+    0 0 8px rgba(255, 248, 231, 0.55),
+    3px 5px 9px rgba(0, 0, 0, 0.55);
   font-size:.8em;
   line-height:1em;
 }
-.ediblewrapper, .controls, .firstwords, .closebutton {
+.controls, .firstwords, .closebutton {
   display: none;
 }
 
+.ediblewrapper {
+  display: block;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.ediblewrapper.video-active {
+  visibility: visible;
+  pointer-events: auto;
+}
+
+
+/* Lock the document while the intro or artwork is active. */
+html.experience-active,
+html.experience-active body {
+  overflow: hidden;
+}
+
+/* Anchor the work question to the desk photograph. */
+.office {
+  position: relative;
+}
