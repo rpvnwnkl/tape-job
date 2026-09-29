@@ -1,0 +1,14 @@
+[
+  {
+    "path": "js/FitText.js/jquery.fittext.js",
+    "url": "https://raw.githubusercontent.com/davatron5000/FitText.js/07374d7ade72e7c340a267c6285f96be57435792/jquery.fittext.js",
+    "sha256": "c499a934a3a4111346993c847d1b0ecd309295fb2d3f0e57b9d44ecaac732e17",
+    "revision": "07374d7ade72e7c340a267c6285f96be57435792"
+  },
+  {
+    "path": "js/FitText.js/README.md",
+    "url": "https://raw.githubusercontent.com/davatron5000/FitText.js/07374d7ade72e7c340a267c6285f96be57435792/README.md",
+    "sha256": "737de53ab0ce0b143338b94312c1ecd01c3ca6846f29ffaa9efef994fd5669aa",
+    "revision": "07374d7ade72e7c340a267c6285f96be57435792"
+  }
+]

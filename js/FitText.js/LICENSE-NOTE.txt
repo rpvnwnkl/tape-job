@@ -1,0 +1,4 @@
+FitText.js 1.2, Copyright 2011 Dave Rupert.
+The pinned source declares the WTFPL license and links to http://sam.zoy.org/wtfpl/.
+That attribution and license declaration are preserved verbatim in jquery.fittext.js.
+The upstream pinned revision contains no separate license file.
