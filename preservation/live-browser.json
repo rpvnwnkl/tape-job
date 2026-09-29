@@ -1,0 +1,209 @@
+{
+  "mode": "after",
+  "browser": "139.0.7230.0",
+  "viewport": {
+    "width": 1280,
+    "height": 800
+  },
+  "errors": [],
+  "failed": [
+    {
+      "url": "https://rpvnwnkl.github.io/tape-job/vid/flipflop_tape1.webmhd.webm",
+      "error": {
+        "errorText": "net::ERR_ABORTED"
+      }
+    }
+  ],
+  "external": [],
+  "badResponses": [],
+  "forward": [
+    {
+      "time": 2.34907,
+      "stop": 2.1
+    },
+    {
+      "time": 5.527436,
+      "stop": 5.5,
+      "lightbox": "photocase1",
+      "image": {
+        "complete": true,
+        "width": 773,
+        "src": "img/page1.jpg"
+      }
+    },
+    {
+      "time": 8.174693,
+      "stop": 8,
+      "lightbox": "photocase2",
+      "image": {
+        "complete": true,
+        "width": 773,
+        "src": "img/page2.jpg"
+      }
+    },
+    {
+      "time": 10.563118,
+      "stop": 10.35,
+      "lightbox": "photocase3",
+      "image": {
+        "complete": true,
+        "width": 773,
+        "src": "img/page3.jpg"
+      }
+    },
+    {
+      "time": 13.207379,
+      "stop": 13,
+      "lightbox": "photocase4",
+      "image": {
+        "complete": true,
+        "width": 773,
+        "src": "img/page4.jpg"
+      }
+    },
+    {
+      "time": 15.860637,
+      "stop": 15.75,
+      "lightbox": "photocase5",
+      "image": {
+        "complete": true,
+        "width": 773,
+        "src": "img/page5.jpg"
+      }
+    },
+    {
+      "time": 18.517142,
+      "stop": 18.5,
+      "lightbox": "photocase6",
+      "image": {
+        "complete": true,
+        "width": 773,
+        "src": "img/page6.jpg"
+      }
+    },
+    {
+      "time": 21.701563,
+      "stop": 21.6,
+      "lightbox": "photocase7",
+      "image": {
+        "complete": true,
+        "width": 773,
+        "src": "img/page7.jpg"
+      }
+    },
+    {
+      "time": 25.149303,
+      "stop": 25,
+      "lightbox": "photocase8",
+      "image": {
+        "complete": true,
+        "width": 695,
+        "src": "img/page8.jpg"
+      }
+    },
+    {
+      "time": 29.125954,
+      "stop": 29,
+      "lightbox": "photocase9",
+      "image": {
+        "complete": true,
+        "width": 695,
+        "src": "img/page9.jpg"
+      }
+    },
+    {
+      "time": 33.106896,
+      "stop": 33
+    }
+  ],
+  "backward": [
+    {
+      "time": 36.714488,
+      "stop": 36.5
+    },
+    {
+      "time": 41.224614,
+      "stop": 41
+    },
+    {
+      "time": 45.197077,
+      "stop": 45
+    },
+    {
+      "time": 48.108615,
+      "stop": 48
+    },
+    {
+      "time": 50.756932,
+      "stop": 50.5
+    },
+    {
+      "time": 53.40208,
+      "stop": 53.25
+    },
+    {
+      "time": 56.053266,
+      "stop": 56
+    },
+    {
+      "time": 58.171198,
+      "stop": 58
+    },
+    {
+      "time": 61.615627,
+      "stop": 61.5
+    },
+    {
+      "time": 64.265768,
+      "stop": 64
+    },
+    {
+      "time": 64.525874,
+      "stop": 64
+    }
+  ],
+  "initial": {
+    "fontStatus": "loaded",
+    "fonts": [
+      {
+        "family": "VideoJS",
+        "weight": "normal",
+        "style": "normal",
+        "status": "unloaded"
+      },
+      {
+        "family": "Arvo",
+        "weight": "400",
+        "style": "normal",
+        "status": "loaded"
+      },
+      {
+        "family": "Arvo",
+        "weight": "700",
+        "style": "normal",
+        "status": "unloaded"
+      },
+      {
+        "family": "Arvo",
+        "weight": "400",
+        "style": "italic",
+        "status": "loaded"
+      },
+      {
+        "family": "Alfa Slab One",
+        "weight": "400",
+        "style": "normal",
+        "status": "loaded"
+      }
+    ],
+    "video": {
+      "readyState": 4,
+      "duration": 66.666
+    },
+    "fitText": "function"
+  },
+  "close": {
+    "videoHidden": true,
+    "time": 64.525874
+  }
+}

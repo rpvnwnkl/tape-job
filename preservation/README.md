@@ -2,8 +2,10 @@
 
 Preservation began in 2026 on `modern`, based on historical commit
 `a976375897de5a73483731646420abdb10e4210c` (2015-09-09).
-`master` and the existing `gh-pages` history remain untouched. This batch is
-local only: nothing was pushed, published, or configured for deployment.
+`master` and the existing `gh-pages` history remain untouched. The preserved
+`modern` branch is published at https://rpvnwnkl.github.io/tape-job/ through
+GitHub Pages, serving the repository root with no application build system.
+See `PUBLICATION.md` for deployment evidence and HTTPS enforcement limitations.
 
 The artwork and its website are both preserved objects. No redesign, library
 upgrade, formatting sweep, media conversion, or navigation repair is included.
@@ -82,7 +84,9 @@ are retained; this batch does not restore obsolete plugin playback.
 Serve this directory with an ordinary static HTTP server. No build, package
 installation, or submodule initialization is required. For a project-site
 test, mount the directory at `/tape-job/`. Use a server that supports byte-range
-requests for video seeking. Do not infer GitHub Pages deployment from local
-tests; no deployment was performed.
+requests for video seeking. Live GitHub Pages validation is recorded separately
+in `PUBLICATION.md`; earlier local comparisons remain in `VALIDATION.md`.
 
-See `VALIDATION.md` for observed results and remaining behavior questions.
+See `VALIDATION.md` for the original local results, `PUBLICATION.md` for live
+checks, and `BEHAVIORS.md` for evidence-based classifications and unapplied
+repair proposals. No behavior is called intentional merely because it is old.

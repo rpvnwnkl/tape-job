@@ -1,0 +1,57 @@
+{
+  "closePaused": {
+    "time": 8.1,
+    "stop": 8,
+    "paused": true,
+    "ended": false,
+    "hidden": true
+  },
+  "closePlaying": {
+    "time": 8.12514,
+    "stop": 13,
+    "paused": false,
+    "ended": false,
+    "hidden": true
+  },
+  "closePlayingLater": {
+    "time": 8.62787,
+    "stop": 13,
+    "paused": false,
+    "ended": false,
+    "hidden": true
+  },
+  "backward64": {
+    "time": 64.354952,
+    "stop": 64,
+    "paused": true,
+    "ended": false,
+    "hidden": false
+  },
+  "backwardOpeningToEnd": {
+    "time": 66.666,
+    "stop": 67,
+    "paused": true,
+    "ended": true,
+    "hidden": false
+  },
+  "forwardEndToFirst": {
+    "time": 2.217372,
+    "stop": 2.1,
+    "paused": true,
+    "ended": false,
+    "hidden": false
+  },
+  "forwardLast": {
+    "time": 33.364231,
+    "stop": 33,
+    "paused": true,
+    "ended": false,
+    "hidden": false
+  },
+  "escapeBefore": {
+    "active": "<a href=\"javascript:litterbox()\">\n              <div onclick=\"litterbox()\" class=\"blowupdiv  \"><!-- <div class=\"buttons\"><img src=\"img/openbutton.png\" alt=\"look closer?\"></div> --></div>\n            </a>",
+    "keyboard": true
+  },
+  "escapeOriginalStillOpen": true,
+  "escapeWithCorrectedAttributeStillOpen": false
+}

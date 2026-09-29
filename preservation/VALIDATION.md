@@ -24,8 +24,8 @@ does not require that harness or its browser-testing packages to run.
   corresponding `img/page1.jpg` through `img/page9.jpg`, and closed through
   backdrop clicks. Original image dimensions were confirmed after loading.
 - Eleven backward clicks exercised stops 36.5, 41, 45, 48, 50.5, 53.25, 56,
-  58, 61.5, 64 and then 64 again. The last behavior is a preserved quirk,
-  not a claim that backward navigation reliably resets to the beginning.
+  58, 61.5, 64 and then 64 again. The last behavior is a pre-existing failure,
+  not evidence of intentional design or a reliable reset to the beginning.
 - The close control hid the video and retained its current position.
 - A historical-reference run served the original HTML and main CSS directly
   from Git, with the test harness supplying the same pinned dependencies in
@@ -60,8 +60,10 @@ video element. The observed retained position is consistent with that code.
 The last backward click near 64 seconds retains a previous stop value. These
 behaviors reproduced with the historical source and remain unchanged.
 
-No Safari, Firefox, legacy IE, touch-device, production HTTPS, or live GitHub
-Pages test was performed. The chosen viewport is a repeatable comparison size,
+At this initial local-validation stage, no Safari, Firefox, legacy IE,
+touch-device, production HTTPS, or live GitHub Pages test had been performed.
+The subsequent live publication checks are recorded in `PUBLICATION.md`, and
+source/history investigation and repair proposals in `BEHAVIORS.md`. The chosen viewport is a repeatable comparison size,
 not a claim about the author's original monitor. Font provenance limits and
 dormant legacy dependencies are documented in README.md. Additional browser
 coverage and any proposed navigation/focus repairs belong in a separate review.
