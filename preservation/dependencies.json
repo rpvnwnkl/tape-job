@@ -106,5 +106,65 @@
     "url": "https://raw.githubusercontent.com/jquery/jquery-ui/1.10.3/MIT-LICENSE.txt",
     "sha256": "ba1d100e74583b4a818e58acd7e435473c7ee2ed009cf069dde811d7da914167",
     "version": "1.10.3"
+  },
+  {
+    "path": "css/fonts/arvo/Arvo-Regular.ttf",
+    "url": "https://raw.githubusercontent.com/google/fonts/283c560b1112e6b7eeb04c3661fbc9c561a6e65c/ofl/arvo/Arvo-Regular.ttf",
+    "sha256": "414289d440b46a5ebc0a40dd3e63adb253e6f3b15d68a7f6ddc1691d37979394",
+    "revision": "283c560b1112e6b7eeb04c3661fbc9c561a6e65c"
+  },
+  {
+    "path": "css/fonts/arvo/Arvo-Bold.ttf",
+    "url": "https://raw.githubusercontent.com/google/fonts/283c560b1112e6b7eeb04c3661fbc9c561a6e65c/ofl/arvo/Arvo-Bold.ttf",
+    "sha256": "db735f15dac276decaf787f300bd34be8a6d2fca5b0a1d4c8cd676e418c2ee09",
+    "revision": "283c560b1112e6b7eeb04c3661fbc9c561a6e65c"
+  },
+  {
+    "path": "css/fonts/arvo/Arvo-Italic.ttf",
+    "url": "https://raw.githubusercontent.com/google/fonts/283c560b1112e6b7eeb04c3661fbc9c561a6e65c/ofl/arvo/Arvo-Italic.ttf",
+    "sha256": "d644bf55caaa03fd9a23dbaa38018c0d667d71dd70507ebf3e6c9d63d94452c2",
+    "revision": "283c560b1112e6b7eeb04c3661fbc9c561a6e65c"
+  },
+  {
+    "path": "css/fonts/arvo/OFL.txt",
+    "url": "https://raw.githubusercontent.com/google/fonts/283c560b1112e6b7eeb04c3661fbc9c561a6e65c/ofl/arvo/OFL.txt",
+    "sha256": "359671bf16c00cae69cb66d041296b2adc7a4becd73a463cb8c5e101d97c7986",
+    "revision": "283c560b1112e6b7eeb04c3661fbc9c561a6e65c"
+  },
+  {
+    "path": "css/fonts/arvo/FONTLOG.txt",
+    "url": "https://raw.githubusercontent.com/google/fonts/283c560b1112e6b7eeb04c3661fbc9c561a6e65c/ofl/arvo/FONTLOG.txt",
+    "sha256": "b270eb66928d52922a820d6b6971abf0b115b5536498d2114c1551ad728b95dc",
+    "revision": "283c560b1112e6b7eeb04c3661fbc9c561a6e65c"
+  },
+  {
+    "path": "css/fonts/arvo/METADATA.json",
+    "url": "https://raw.githubusercontent.com/google/fonts/283c560b1112e6b7eeb04c3661fbc9c561a6e65c/ofl/arvo/METADATA.json",
+    "sha256": "2b4d4eba34cb4c7779165b298c3a3c1335e50fbd6e8b4cb8f03c635cdb6db43c",
+    "revision": "283c560b1112e6b7eeb04c3661fbc9c561a6e65c"
+  },
+  {
+    "path": "css/fonts/alfaslabone/AlfaSlabOne-Regular.ttf",
+    "url": "https://raw.githubusercontent.com/google/fonts/283c560b1112e6b7eeb04c3661fbc9c561a6e65c/ofl/alfaslabone/AlfaSlabOne-Regular.ttf",
+    "sha256": "29aeb77fd08fb77315e0d1dc92ee64b3660c910f9f48755124c7765bf575bdad",
+    "revision": "283c560b1112e6b7eeb04c3661fbc9c561a6e65c"
+  },
+  {
+    "path": "css/fonts/alfaslabone/OFL.txt",
+    "url": "https://raw.githubusercontent.com/google/fonts/283c560b1112e6b7eeb04c3661fbc9c561a6e65c/ofl/alfaslabone/OFL.txt",
+    "sha256": "409bc69096b7a4678194d240bc808eb50a719ff3b76e139f0a194911e5f67b3e",
+    "revision": "283c560b1112e6b7eeb04c3661fbc9c561a6e65c"
+  },
+  {
+    "path": "css/fonts/alfaslabone/FONTLOG.txt",
+    "url": "https://raw.githubusercontent.com/google/fonts/283c560b1112e6b7eeb04c3661fbc9c561a6e65c/ofl/alfaslabone/FONTLOG.txt",
+    "sha256": "3143a62879acc26e6c282da027f153b5481b6a61803ab9a55cccb2a8216b68a9",
+    "revision": "283c560b1112e6b7eeb04c3661fbc9c561a6e65c"
+  },
+  {
+    "path": "css/fonts/alfaslabone/METADATA.json",
+    "url": "https://raw.githubusercontent.com/google/fonts/283c560b1112e6b7eeb04c3661fbc9c561a6e65c/ofl/alfaslabone/METADATA.json",
+    "sha256": "de2612b3d4f6a3fdd23a53df3359ed96fa4da677f2a77d502c7932e5d571553a",
+    "revision": "283c560b1112e6b7eeb04c3661fbc9c561a6e65c"
   }
 ]

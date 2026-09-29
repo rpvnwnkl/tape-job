@@ -3,8 +3,7 @@
    ========================================================================== */
 
 /*@import url(http://fonts.googleapis.com/css?family=Play);*/
-@import url(http://fonts.googleapis.com/css?family=Arvo:700,400italic,400);
-@import url(http://fonts.googleapis.com/css?family=Alfa+Slab+One);
+@import url('fonts.css');
 
 html, body {
   overflow-x: hidden;
